@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <Androids.DroidCraftingDef>
+    <defName>Android_SpacerDroid</defName>
+    <label>advanced worker droid</label>
+    <orderID>0</orderID>
+    <costList>
+      <Steel>340</Steel>
+      <Plasteel>120</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <timeCost>32000</timeCost>
+    <pawnKind>ChjSpacerDroidColonist</pawnKind>
+    <requiredResearch>Build_SpacerDroids</requiredResearch>
+  </Androids.DroidCraftingDef>
+
+  <Androids.DroidCraftingDef>
+    <defName>Android_SpacerBattleDroid</defName>
+    <label>advanced battle droid</label>
+    <orderID>1</orderID>
+    <costList>
+      <Steel>680</Steel>
+      <Plasteel>220</Plasteel>
+      <ComponentIndustrial>18</ComponentIndustrial>
+      <ComponentSpacer>9</ComponentSpacer>
+    </costList>
+    <timeCost>98000</timeCost>
+    <pawnKind>ChjSpacerBattleDroidColonist</pawnKind>
+    <requiredResearch>Build_SpacerDroids</requiredResearch>
+  </Androids.DroidCraftingDef>
+
+</Defs>
