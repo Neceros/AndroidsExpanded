@@ -22,5 +22,11 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjBattleDroid" or defName="ChjDroid"]/race/body</xpath>
+    <value>
+      <body>DroidBody</body>
+    </value>
+  </Operation>
 
 </Patch>

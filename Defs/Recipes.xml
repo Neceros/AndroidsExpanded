@@ -11,7 +11,7 @@
       <ComponentIndustrial>10</ComponentIndustrial>
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
-    <timeCost>32000</timeCost>
+    <timeCost>48000</timeCost>
     <pawnKind>ChjSpacerDroidColonist</pawnKind>
     <requiredResearch>Build_SpacerDroids</requiredResearch>
   </Androids.DroidCraftingDef>
@@ -26,7 +26,7 @@
       <ComponentIndustrial>18</ComponentIndustrial>
       <ComponentSpacer>9</ComponentSpacer>
     </costList>
-    <timeCost>98000</timeCost>
+    <timeCost>128000</timeCost>
     <pawnKind>ChjSpacerBattleDroidColonist</pawnKind>
     <requiredResearch>Build_SpacerDroids</requiredResearch>
   </Androids.DroidCraftingDef>

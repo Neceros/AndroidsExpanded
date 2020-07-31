@@ -3,7 +3,7 @@
 
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>ChjSpacerDroid</defName>
-    <label>Droid+</label>
+    <label>Advanced droid</label>
     <description>A race of spacer-tech humanlike worker robots.\n\nUsually found toiling around in colonies around the rim which got a resident tinkerer.Not capable of sapience making them perfect for colony tasks. \n\nAdvanced droids are much better than their outdated models in every way. \n\nDroids are not born and must be created.</description>
     <uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>
     <comps>
@@ -14,7 +14,6 @@
     </comps>
     <alienRace>
       <generalSettings>
-        <!-->maxDamageForSocialfight>6</maxDamageForSocialfight-->
         <maleGenderProbability>1</maleGenderProbability>
         <immuneToAge>true</immuneToAge>
         <disallowedTraits>
@@ -137,7 +136,7 @@
       <PainShockThreshold>5</PainShockThreshold>
       <MentalBreakThreshold>0</MentalBreakThreshold>
       <SocialImpact>0</SocialImpact>
-      <GlobalLearningFactor>0.0</GlobalLearningFactor>
+      <GlobalLearningFactor>1</GlobalLearningFactor>
       <WorkSpeedGlobal>1.4</WorkSpeedGlobal>
       <ImmunityGainSpeed>10</ImmunityGainSpeed>
       <LeatherAmount>0</LeatherAmount>
@@ -184,16 +183,6 @@
         </surpriseAttack>
       </li>
       <li>
-        <label>teeth</label>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>12</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.1</chanceFactor>
-      </li>
-      <li>
         <label>head</label>
         <capacities>
           <li>Blunt</li>
@@ -214,7 +203,7 @@
       <baseHungerRate>0</baseHungerRate>
       <leatherDef>Leather_ChJAndroid</leatherDef>
       <nameCategory>HumanStandard</nameCategory>
-      <body>ChJDroid</body>
+      <body>DroidBody</body>
       <bloodDef>ChjFilthCoolant</bloodDef>
       <deathActionWorkerClass>Androids.DeathActionWorker_Droid</deathActionWorkerClass>
       <baseBodySize>1.25</baseBodySize>
@@ -327,14 +316,14 @@
 
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>ChjSpacerBattleDroid</defName>
-    <label>Battledroid+</label>
-    <description>A race of spacer-tech humanlike warrior robots.\n\nUsually found guarding the homes of the wealthy and offices of mega corporations. They show no mercy upon targets who fail to identify themselves. Are traditionally armed with miniguns and core launchers.\n\nAdvanced droids are much better than their outdated models in every way.\n\nDroids are not born and must be created.</description>
+    <label>Wardroid</label>
+    <description>A race of spacer-tech humanlike warrior robots.\n\nInstalled into military bases and highly sensitive areas. They show no mercy upon targets who fail to identify themselves. Are traditionally armed with miniguns and core launchers.\n\nAdvanced droids are much better than their outdated models in every way. Wardroids possess four arms, each of which is highly deadly. Humans beware: bring an army to defeat this model.\n\nDroids are not born and must be created.</description>
     <uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>
     <comps>
       <li Class="Androids.CompProperties_EnergyTracker">
         <canHibernate>true</canHibernate>
         <hibernationJob>ChJDroidHibernate</hibernationJob>
-        <maxEnergy>5</maxEnergy>
+        <maxEnergy>3</maxEnergy>
         <ticksSpentCharging>600</ticksSpentCharging>
       </li>
     </comps>
@@ -380,11 +369,15 @@
             <options>
               <li>
                 <weight>10</weight>
-                <only>RGBA(0.95,0.80,0.80,1)</only>
+                <only>RGBA(0.95,0.55,0.55,1)</only>
               </li>
               <li>
-                <weight>5</weight>
-                <only>RGBA(0.80,0.80,0.95,1)</only>
+                <weight>4</weight>
+                <only>RGBA(0.95,0.95,0.95,1)</only>
+              </li>
+              <li>
+                <weight>2</weight>
+                <only>RGBA(1.00,0.84,0.00,1)</only>
               </li>
             </options>
           </alienskincolorgen>
@@ -458,11 +451,11 @@
       </relationSettings>
     </alienRace>
     <statBases>
-      <MarketValue>2800</MarketValue>
+      <MarketValue>3500</MarketValue>
       <MoveSpeed>7.2</MoveSpeed>
       <Flammability>0.0</Flammability>
-      <ComfyTemperatureMin>-200</ComfyTemperatureMin>
-      <ComfyTemperatureMax>500</ComfyTemperatureMax>
+      <ComfyTemperatureMin>-1000</ComfyTemperatureMin>
+      <ComfyTemperatureMax>1000</ComfyTemperatureMax>
       <ToxicSensitivity>0</ToxicSensitivity>
       <PsychicSensitivity>0</PsychicSensitivity>
       <PainShockThreshold>5</PainShockThreshold>
@@ -472,69 +465,100 @@
       <ImmunityGainSpeed>10</ImmunityGainSpeed>
       <LeatherAmount>0</LeatherAmount>
       <MeatAmount>0</MeatAmount>
-      <MeleeDodgeChance>-0.65</MeleeDodgeChance>
-      <ArmorRating_Sharp>1.8</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+      <AimingDelayFactor>0.50</AimingDelayFactor>
+      <MeleeDodgeChance>-0.99</MeleeDodgeChance>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
       <ArmorRating_Heat>2.00</ArmorRating_Heat>
       <CarryingCapacity>150</CarryingCapacity>
       <Mass>75.0</Mass>
     </statBases>
     <tools>
       <li>
-        <label>left bladed fist</label>
+        <label>left razor-fist</label>
         <capacities>
           <li>Cut</li>
           <li>Stab</li>
+          <li>Blunt</li>
         </capacities>
-        <power>25</power>
-        <cooldownTime>1.4</cooldownTime>
-        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <power>40</power>
+        <cooldownTime>1.7</cooldownTime>
+        <linkedBodyPartsGroup>LeftDroidHand</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
               <def>Stun</def>
-              <amount>22</amount>
+              <amount>35</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
       </li>
       <li>
-        <label>right bladed fist</label>
+        <label>right razor-fist</label>
         <capacities>
           <li>Cut</li>
           <li>Stab</li>
+          <li>Blunt</li>
         </capacities>
-        <power>25</power>
-        <cooldownTime>1.4</cooldownTime>
-        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <power>40</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightDroidHand</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
               <def>Stun</def>
-              <amount>22</amount>
+              <amount>35</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
       </li>
       <li>
-        <label>teeth</label>
+        <label>lower left razor-fist</label>
         <capacities>
-          <li>Bite</li>
+          <li>Cut</li>
+          <li>Stab</li>
+          <li>Blunt</li>
         </capacities>
-        <power>18.0</power>
-        <cooldownTime>1.6</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.1</chanceFactor>
+        <power>40</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftDroidHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>35</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
       </li>
       <li>
-        <label>head</label>
+        <label>lower right razor-fist</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+          <li>Blunt</li>
+        </capacities>
+        <power>40</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LowerRightDroidHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>35</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>giant body slam</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>18</power>
-        <cooldownTime>1.2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <chanceFactor>0.2</chanceFactor>
+        <power>75</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
+        <chanceFactor>0.40</chanceFactor>
       </li>
     </tools>
     <race>
@@ -547,11 +571,11 @@
       <baseHungerRate>0</baseHungerRate>
       <leatherDef>Leather_ChJAndroid</leatherDef>
       <nameCategory>HumanStandard</nameCategory>
-      <body>ChJDroid</body>
+      <body>WardroidBody</body>
       <bloodDef>ChjFilthCoolant</bloodDef>
       <deathActionWorkerClass>Androids.DeathActionWorker_Droid</deathActionWorkerClass>
       <baseBodySize>3.00</baseBodySize>
-      <baseHealthScale>3</baseHealthScale>
+      <baseHealthScale>4</baseHealthScale>
       <foodType>None</foodType>
       <useMeatFrom>ChjAndroid</useMeatFrom>
       <gestationPeriodDays>1</gestationPeriodDays>
