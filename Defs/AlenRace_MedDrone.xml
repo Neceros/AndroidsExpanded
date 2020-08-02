@@ -142,8 +142,8 @@
       <CarryingCapacity>60</CarryingCapacity>
       <MedicalSurgerySuccessChance>1.10</MedicalSurgerySuccessChance>
       <MedicalTendQuality>1.10</MedicalTendQuality>
-      <MedicalOperationSpeed>1.33</MedicalOperationSpeed>
-      <MedicalTendSpeed>1.33</MedicalTendSpeed>
+      <MedicalOperationSpeed>1.25</MedicalOperationSpeed>
+      <MedicalTendSpeed>1.25</MedicalTendSpeed>
       <Mass>15.0</Mass>
     </statBases>
     <tools>

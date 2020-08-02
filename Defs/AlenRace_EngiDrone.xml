@@ -145,9 +145,9 @@
       <ArmorRating_Blunt>0.0</ArmorRating_Blunt>
       <ArmorRating_Heat>1.0</ArmorRating_Heat>
       <CarryingCapacity>60</CarryingCapacity>
-      <ConstructionSpeedFactor>1.33</ConstructionSpeedFactor>
-      <ConstructSuccessChance>1.66</ConstructSuccessChance>
-      <MiningSpeed>1.25</MiningSpeed>
+      <ConstructionSpeedFactor>1.20</ConstructionSpeedFactor>
+      <ConstructSuccessChance>1.33</ConstructSuccessChance>
+      <MiningSpeed>1.15</MiningSpeed>
       <MiningYield>1.05</MiningYield>
       <Mass>15.0</Mass>
     </statBases>
