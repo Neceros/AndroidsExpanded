@@ -55,4 +55,28 @@
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 	</PawnKindDef>
 
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>NEngiDroneColonist</defName>
+		<label>engineer drone</label>
+		<race>NEngiDrone</race>
+		<defaultFactionType>ChjPlayerAndroidColony</defaultFactionType>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>NChefDroneColonist</defName>
+		<label>chef drone</label>
+		<race>NChefDrone</race>
+		<defaultFactionType>ChjPlayerAndroidColony</defaultFactionType>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>NMedicDroneColonist</defName>
+		<label>medicine drone</label>
+		<race>NMedicDrone</race>
+		<defaultFactionType>ChjPlayerAndroidColony</defaultFactionType>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+	</PawnKindDef>
+
 </Defs>

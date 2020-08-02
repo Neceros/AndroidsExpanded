@@ -137,7 +137,7 @@
       <MentalBreakThreshold>0</MentalBreakThreshold>
       <SocialImpact>0</SocialImpact>
       <GlobalLearningFactor>1</GlobalLearningFactor>
-      <WorkSpeedGlobal>1.4</WorkSpeedGlobal>
+      <WorkSpeedGlobal>1.33</WorkSpeedGlobal>
       <ImmunityGainSpeed>10</ImmunityGainSpeed>
       <LeatherAmount>0</LeatherAmount>
       <MeatAmount>0</MeatAmount>
@@ -501,7 +501,7 @@
           <li>Blunt</li>
         </capacities>
         <power>40</power>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>1.7</cooldownTime>
         <linkedBodyPartsGroup>RightDroidHand</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
@@ -520,7 +520,7 @@
           <li>Blunt</li>
         </capacities>
         <power>40</power>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>1.7</cooldownTime>
         <linkedBodyPartsGroup>LeftDroidHand</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
@@ -539,7 +539,7 @@
           <li>Blunt</li>
         </capacities>
         <power>40</power>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>1.7</cooldownTime>
         <linkedBodyPartsGroup>LowerRightDroidHand</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
@@ -555,10 +555,10 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>75</power>
+        <power>80</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
-        <chanceFactor>0.40</chanceFactor>
+        <chanceFactor>0.33</chanceFactor>
       </li>
     </tools>
     <race>

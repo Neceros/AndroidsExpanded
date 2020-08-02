@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+  
   <BodyDef>
     <defName>DroidBody</defName>
     <label>Droid</label>
     <corePart>
-      <def>DroidTorso</def>
+      <def>Frame</def>
       <height>Middle</height>
       <depth>Outside</depth>
       <groups>
@@ -14,8 +14,11 @@
       <parts>
         <li>
           <def>Chasis</def>
-          <coverage>0</coverage>
-          <depth>Outside</depth>
+          <coverage>0.3</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
         </li>
         <li>
           <def>DroidHeart</def>
@@ -59,7 +62,7 @@
         </li>
         <li>
           <def>DroidNeck</def>
-          <coverage>0.05</coverage>
+          <coverage>0</coverage>
           <height>Top</height>
           <parts>
             <li>
@@ -133,7 +136,7 @@
         </li>
         <li>
           <def>LeftDroidShoulder</def>
-          <coverage>0.17</coverage>
+          <coverage>0.15</coverage>
           <groups>
             <li>Shoulders</li>
           </groups>
@@ -193,7 +196,7 @@
         </li>
         <li>
           <def>RightDroidShoulder</def>
-          <coverage>0.17</coverage>
+          <coverage>0.15</coverage>
           <groups>
             <li>Shoulders</li>
           </groups>
@@ -261,7 +264,7 @@
         </li>
         <li>
           <def>LeftDroidLeg</def>
-          <coverage>0.2</coverage>
+          <coverage>0.15</coverage>
           <height>Bottom</height>
           <groups>
             <li>Legs</li>
@@ -278,7 +281,7 @@
         </li>
         <li>
           <def>RightDroidLeg</def>
-          <coverage>0.2</coverage>
+          <coverage>0.15</coverage>
           <height>Bottom</height>
           <groups>
             <li>Legs</li>
@@ -306,7 +309,7 @@
     <defName>WardroidBody</defName>
     <label>Droid</label>
     <corePart>
-      <def>DroidTorso</def>
+      <def>Frame</def>
       <height>Middle</height>
       <depth>Outside</depth>
       <groups>
@@ -315,12 +318,15 @@
       <parts>
         <li>
           <def>Chasis</def>
-          <coverage>0</coverage>
-          <depth>Outside</depth>
+          <coverage>0.30</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
         </li>
         <li>
           <def>DroidHeart</def>
-          <coverage>0.023</coverage>
+          <coverage>0.02</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -328,7 +334,7 @@
         </li>
         <li>
           <def>DroidLeftLung</def>
-          <coverage>0.025</coverage>
+          <coverage>0.02</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -336,7 +342,7 @@
         </li>
         <li>
           <def>DroidRightLung</def>
-          <coverage>0.025</coverage>
+          <coverage>0.02</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -351,8 +357,16 @@
           </groups>
         </li>
         <li>
+          <def>DroidRightKidney</def>
+          <coverage>0.01</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
           <def>DroidLiver</def>
-          <coverage>0.023</coverage>
+          <coverage>0.01</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -360,12 +374,12 @@
         </li>
         <li>
           <def>DroidNeck</def>
-          <coverage>0.05</coverage>
+          <coverage>0.0</coverage>
           <height>Top</height>
           <parts>
             <li>
               <def>Head</def>
-              <coverage>0.72</coverage>
+              <coverage>0.10</coverage>
               <groups>
                 <li>UpperHead</li>
                 <li>FullHead</li>
@@ -374,7 +388,7 @@
               <parts>
                 <li>
                   <def>DroidBrain</def>
-                  <coverage>0.10</coverage>
+                  <coverage>0.03</coverage>
                   <depth>Inside</depth>
                   <groups>
                     <li>UpperHead</li>
@@ -383,7 +397,7 @@
                 </li>
                 <li>
                   <def>DroidLeftSightSensor</def>
-                  <coverage>0.13</coverage>
+                  <coverage>0.01</coverage>
                   <groups>
                     <li>FullHead</li>
                     <li>Eyes</li>
@@ -391,7 +405,7 @@
                 </li>
                 <li>
                   <def>DroidRightSightSensor</def>
-                  <coverage>0.13</coverage>
+                  <coverage>0.01</coverage>
                   <groups>
                     <li>FullHead</li>
                     <li>Eyes</li>
@@ -399,7 +413,7 @@
                 </li>
                 <li>
                   <def>DroidLeftHearingSensor</def>
-                  <coverage>0.10</coverage>
+                  <coverage>0.01</coverage>
                   <groups>
                     <li>UpperHead</li>
                     <li>FullHead</li>
@@ -407,7 +421,7 @@
                 </li>
                 <li>
                   <def>DroidRightHearingSensor</def>
-                  <coverage>0.10</coverage>
+                  <coverage>0.01</coverage>
                   <groups>
                     <li>UpperHead</li>
                     <li>FullHead</li>
@@ -415,14 +429,14 @@
                 </li>
                 <li>
                   <def>DroidSmellSensor</def>
-                  <coverage>0.10</coverage>
+                  <coverage>0.01</coverage>
                   <groups>
                     <li>FullHead</li>
                   </groups>
                 </li>
                 <li>
                   <def>Jaw</def>
-                  <coverage>0.15</coverage>
+                  <coverage>0.01</coverage>
                   <groups>
                     <li>Teeth</li>
                     <li>FullHead</li>
@@ -434,21 +448,21 @@
         </li>
         <li>
           <def>LeftDroidShoulder</def>
-          <coverage>0.22</coverage>
+          <coverage>0.05</coverage>
           <groups>
             <li>Shoulders</li>
           </groups>
           <parts>
             <li>
               <def>LeftDroidArm</def>
-              <coverage>0.50</coverage>
+              <coverage>0.10</coverage>
               <groups>
                 <li>Arms</li>
               </groups>
               <parts>
                 <li>
                   <def>LeftDroidHand</def>
-                  <coverage>0.1</coverage>
+                  <coverage>0.05</coverage>
                   <height>Bottom</height>
                   <groups>
                     <li>Hands</li>
@@ -457,7 +471,7 @@
                   <parts>
                     <li>
                       <def>LeftHandDroidPinky</def>
-                      <coverage>0.05</coverage>
+                      <coverage>0</coverage>
                       <groups>
                         <li>Hands</li>
                         <li>LeftHand</li>
@@ -465,7 +479,7 @@
                     </li>
                     <li>
                       <def>LeftHandDroidMiddleFinger</def>
-                      <coverage>0.05</coverage>
+                      <coverage>0</coverage>
                       <groups>
                         <li>Hands</li>
                         <li>LeftHand</li>
@@ -473,7 +487,7 @@
                     </li>
                     <li>
                       <def>LeftHandDroidIndexFinger</def>
-                      <coverage>0.05</coverage>
+                      <coverage>0</coverage>
                       <groups>
                         <li>Hands</li>
                         <li>LeftHand</li>
@@ -481,7 +495,7 @@
                     </li>
                     <li>
                       <def>LeftHandDroidThumb</def>
-                      <coverage>0.05</coverage>
+                      <coverage>0</coverage>
                       <groups>
                         <li>Hands</li>
                         <li>LeftHand</li>
@@ -495,21 +509,21 @@
         </li>
         <li>
           <def>RightDroidShoulder</def>
-          <coverage>0.22</coverage>
+          <coverage>0.05</coverage>
           <groups>
             <li>Shoulders</li>
           </groups>
           <parts>
             <li>
               <def>RightDroidArm</def>
-              <coverage>0.50</coverage>
+              <coverage>0.10</coverage>
               <groups>
                 <li>Arms</li>
               </groups>
               <parts>
                 <li>
                   <def>RightDroidHand</def>
-                  <coverage>0.1</coverage>
+                  <coverage>0.05</coverage>
                   <height>Bottom</height>
                   <groups>
                     <li>Hands</li>
@@ -518,7 +532,7 @@
                   <parts>
                     <li>
                       <def>RightHandDroidPinky</def>
-                      <coverage>0.05</coverage>
+                      <coverage>0</coverage>
                       <groups>
                         <li>RightHand</li>
                         <li>Hands</li>
@@ -526,7 +540,7 @@
                     </li>
                     <li>
                       <def>RightHandDroidMiddleFinger</def>
-                      <coverage>0.05</coverage>
+                      <coverage>0</coverage>
                       <groups>
                         <li>RightHand</li>
                         <li>Hands</li>
@@ -534,7 +548,7 @@
                     </li>
                     <li>
                       <def>RightHandDroidIndexFinger</def>
-                      <coverage>0.05</coverage>
+                      <coverage>0</coverage>
                       <groups>
                         <li>RightHand</li>
                         <li>Hands</li>
@@ -542,7 +556,7 @@
                     </li>
                     <li>
                       <def>RightHandDroidThumb</def>
-                      <coverage>0.05</coverage>
+                      <coverage>0</coverage>
                       <groups>
                         <li>RightHand</li>
                         <li>Hands</li>
@@ -556,21 +570,21 @@
         </li>
         <li>
           <def>LowerLeftDroidShoulder</def>
-          <coverage>0.22</coverage>
+          <coverage>0.05</coverage>
           <groups>
             <li>Shoulders</li>
           </groups>
           <parts>
             <li>
               <def>LowerLeftDroidArm</def>
-              <coverage>0.50</coverage>
+              <coverage>0.10</coverage>
               <groups>
                 <li>Arms</li>
               </groups>
               <parts>
                 <li>
                   <def>LowerLeftDroidHand</def>
-                  <coverage>0.1</coverage>
+                  <coverage>0.05</coverage>
                   <height>Bottom</height>
                   <groups>
                     <li>Hands</li>
@@ -579,7 +593,7 @@
                   <parts>
                     <li>
                       <def>LowerLeftHandDroidPinky</def>
-                      <coverage>0.05</coverage>
+                      <coverage>0</coverage>
                       <groups>
                         <li>Hands</li>
                         <li>LeftHand</li>
@@ -587,7 +601,7 @@
                     </li>
                     <li>
                       <def>LowerLeftHandDroidMiddleFinger</def>
-                      <coverage>0.05</coverage>
+                      <coverage>0</coverage>
                       <groups>
                         <li>Hands</li>
                         <li>LeftHand</li>
@@ -595,7 +609,7 @@
                     </li>
                     <li>
                       <def>LowerLeftHandDroidIndexFinger</def>
-                      <coverage>0.05</coverage>
+                      <coverage>0</coverage>
                       <groups>
                         <li>Hands</li>
                         <li>LeftHand</li>
@@ -603,7 +617,7 @@
                     </li>
                     <li>
                       <def>LowerLeftHandDroidThumb</def>
-                      <coverage>0.05</coverage>
+                      <coverage>0</coverage>
                       <groups>
                         <li>Hands</li>
                         <li>LeftHand</li>
@@ -617,21 +631,21 @@
         </li>
         <li>
           <def>LowerRightDroidShoulder</def>
-          <coverage>0.22</coverage>
+          <coverage>0.05</coverage>
           <groups>
             <li>Shoulders</li>
           </groups>
           <parts>
             <li>
               <def>LowerRightDroidArm</def>
-              <coverage>0.50</coverage>
+              <coverage>0.10</coverage>
               <groups>
                 <li>Arms</li>
               </groups>
               <parts>
                 <li>
                   <def>LowerRightDroidHand</def>
-                  <coverage>0.1</coverage>
+                  <coverage>0.05</coverage>
                   <height>Bottom</height>
                   <groups>
                     <li>Hands</li>
@@ -640,7 +654,7 @@
                   <parts>
                     <li>
                       <def>LowerRightHandDroidPinky</def>
-                      <coverage>0.05</coverage>
+                      <coverage>0</coverage>
                       <groups>
                         <li>RightHand</li>
                         <li>Hands</li>
@@ -648,7 +662,7 @@
                     </li>
                     <li>
                       <def>LowerRightHandDroidMiddleFinger</def>
-                      <coverage>0.05</coverage>
+                      <coverage>0</coverage>
                       <groups>
                         <li>RightHand</li>
                         <li>Hands</li>
@@ -656,7 +670,7 @@
                     </li>
                     <li>
                       <def>LowerRightHandDroidIndexFinger</def>
-                      <coverage>0.05</coverage>
+                      <coverage>0</coverage>
                       <groups>
                         <li>RightHand</li>
                         <li>Hands</li>
@@ -664,7 +678,7 @@
                     </li>
                     <li>
                       <def>LowerRightHandDroidThumb</def>
-                      <coverage>0.05</coverage>
+                      <coverage>0</coverage>
                       <groups>
                         <li>RightHand</li>
                         <li>Hands</li>
@@ -694,7 +708,7 @@
           <parts>
             <li>
               <def>LeftDroidFoot</def>
-              <coverage>0.2</coverage>
+              <coverage>0.04</coverage>
               <groups>
                 <li>Feet</li>
               </groups>
@@ -711,7 +725,7 @@
           <parts>
             <li>
               <def>RightDroidFoot</def>
-              <coverage>0.2</coverage>
+              <coverage>0.04</coverage>
               <groups>
                 <li>Feet</li>
               </groups>

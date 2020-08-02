@@ -35,7 +35,7 @@
   <BodyPartDef>
     <defName>Chasis</defName>
     <label>chasis</label>
-    <hitPoints>100</hitPoints>
+    <hitPoints>50</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -46,8 +46,8 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidTorso</defName>
-    <label>torso shell</label>
+    <defName>Frame</defName>
+    <label>frame</label>
     <hitPoints>100</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>

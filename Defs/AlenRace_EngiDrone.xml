@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!--
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>ChjSpacerDroid</defName>
-    <label>Droid+</label>
-    <description>A race of spacer-tech humanlike worker robots.\n\nUsually found toiling around in colonies around the rim which got a resident tinkerer.Not capable of sapience making them perfect for colony tasks. \n\nAdvanced droids are much better than their outdated models in every way. \n\nDroids are not born and must be created.</description>
+    <defName>NEngiDrone</defName>
+    <label>engineer</label>
+    <description>Small drone constructed of simple materials and built in short time. This device is masterful in building &amp; mining, but is unable to do much else. Cannot fight.</description>
     <uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>
     <comps>
       <li Class="Androids.CompProperties_EnergyTracker">
         <canHibernate>true</canHibernate>
         <hibernationJob>ChJDroidHibernate</hibernationJob>
+        <maxEnergy>1</maxEnergy>
+        <ticksSpentCharging>600</ticksSpentCharging>
       </li>
     </comps>
     <alienRace>
@@ -47,28 +48,26 @@
                 <weight>10</weight>
                 <only>RGBA(0.94,0.94,0.94,1)</only>
               </li>
-              <li>
-                <weight>5</weight>
-                <only>RGBA(0.80,0.80,0.95,1)</only>
-              </li>
-              <li>
-                <weight>5</weight>
-                <only>RGBA(0.80,0.90,0.80,1)</only>
-              </li>
             </options>
           </alienskincolorgen>
         </alienPartGenerator>
       </generalSettings>
       <graphicPaths>
         <li>
-          <body>Things/ChjDroid/</body>
-          <head>Things/ChjDroid/Head/</head>
-          <skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
+          <body>EngiBot/</body>
         </li>
       </graphicPaths>
       <hairSettings>
         <hasHair>false</hasHair>
       </hairSettings>
+      <raceRestriction>
+        <onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+        <!-- <whiteApparelList>
+          <li>ChjAndroid_ChemfuelGenerator</li>
+          <li>Apparel_ShieldBelt</li>
+          <li>SmokepopBelt</li>
+        </whiteApparelList> -->
+      </raceRestriction>
       <thoughtSettings>
         <cannotReceiveThoughtsAtAll>true</cannotReceiveThoughtsAtAll>
         <cannotReceiveThoughts>
@@ -127,36 +126,40 @@
       </relationSettings>
     </alienRace>
     <statBases>
-      <MarketValue>1650</MarketValue>
-      <MoveSpeed>7.2</MoveSpeed>
-      <Flammability>0.0</Flammability>
-      <ComfyTemperatureMin>-200</ComfyTemperatureMin>
-      <ComfyTemperatureMax>300</ComfyTemperatureMax>
+      <MarketValue>400</MarketValue>
+      <MoveSpeed>4.8</MoveSpeed>
+      <Flammability>0.25</Flammability>
+      <ComfyTemperatureMin>-85</ComfyTemperatureMin>
+      <ComfyTemperatureMax>85</ComfyTemperatureMax>
       <ToxicSensitivity>0</ToxicSensitivity>
       <PsychicSensitivity>0</PsychicSensitivity>
       <PainShockThreshold>5</PainShockThreshold>
       <MentalBreakThreshold>0</MentalBreakThreshold>
       <SocialImpact>0</SocialImpact>
-      <GlobalLearningFactor>1</GlobalLearningFactor>
-      <WorkSpeedGlobal>1.4</WorkSpeedGlobal>
+      <GlobalLearningFactor>0</GlobalLearningFactor>
       <ImmunityGainSpeed>10</ImmunityGainSpeed>
+      <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
       <LeatherAmount>0</LeatherAmount>
       <MeatAmount>0</MeatAmount>
-      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
-      <ArmorRating_Heat>2.00</ArmorRating_Heat>
-      <CarryingCapacity>150</CarryingCapacity>
-      <Mass>60.0</Mass>
+      <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.0</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.0</ArmorRating_Heat>
+      <CarryingCapacity>60</CarryingCapacity>
+      <ConstructionSpeedFactor>1.33</ConstructionSpeedFactor>
+      <ConstructSuccessChance>1.66</ConstructSuccessChance>
+      <MiningSpeed>1.25</MiningSpeed>
+      <MiningYield>1.05</MiningYield>
+      <Mass>15.0</Mass>
     </statBases>
     <tools>
       <li>
-        <label>left fist</label>
+        <label>tool strike</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>20</power>
+        <power>6</power>
         <cooldownTime>1.6</cooldownTime>
-        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>DroneHand</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -165,33 +168,6 @@
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
-      </li>
-      <li>
-        <label>right fist</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>1.6</cooldownTime>
-        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>22</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>12</power>
-        <cooldownTime>1.8</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
     <race>
@@ -199,16 +175,16 @@
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
       <fleshType>ChJDroid</fleshType>
-      <makesFootprints>true</makesFootprints>
+      <makesFootprints>false</makesFootprints>
       <lifeExpectancy>1000</lifeExpectancy>
       <baseHungerRate>0</baseHungerRate>
       <leatherDef>Leather_ChJAndroid</leatherDef>
       <nameCategory>HumanStandard</nameCategory>
-      <body>DroidBody</body>
+      <body>DroneBody</body>
       <bloodDef>ChjFilthCoolant</bloodDef>
       <deathActionWorkerClass>Androids.DeathActionWorker_Droid</deathActionWorkerClass>
-      <baseBodySize>1.25</baseBodySize>
-      <baseHealthScale>0.85</baseHealthScale>
+      <baseBodySize>0.75</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
       <foodType>None</foodType>
       <useMeatFrom>ChjAndroid</useMeatFrom>
       <gestationPeriodDays>1</gestationPeriodDays>
@@ -260,9 +236,8 @@
       <li>ChJAndroidShutDownDroid</li>
     </recipes>
     <butcherProducts>
-      <Steel>60</Steel>
-      <Plasteel>20</Plasteel>
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <Steel>10</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
     </butcherProducts>
     <modExtensions>
       <li Class="Androids.MechanicalPawnProperties">
@@ -271,45 +246,21 @@
         <colonyCaresIfDead>false</colonyCaresIfDead>
       </li>
       <li Class="Androids.DroidSpawnProperties">
-        <defaultSkillLevel>10</defaultSkillLevel>
+        <defaultSkillLevel>0</defaultSkillLevel>
         <skills>
           <li>
-            <def>Shooting</def>
-            <level>6</level>
-          </li>
-          <li>
-            <def>Melee</def>
-            <level>6</level>
-          </li>
-          <li>
             <def>Mining</def>
-            <level>14</level>
-          </li>
-          <li>
-            <def>Plants</def>
-            <level>14</level>
+            <level>10</level>
           </li>
           <li>
             <def>Construction</def>
-            <level>14</level>
-          </li>
-          <li>
-            <def>Crafting</def>
-            <level>14</level>
-          </li>
-          <li>
-            <def>Cooking</def>
-            <level>10</level>
-          </li>
-          <li>
-            <def>Medicine</def>
             <level>10</level>
           </li>
         </skills>
-        <backstory>ChJAndroid_Droid</backstory>
+        <backstory>Backstory_Engi</backstory>
         <bodyType>Thin</bodyType>
       </li>
     </modExtensions>
   </AlienRace.ThingDef_AlienRace>
--->
+
 </Defs>

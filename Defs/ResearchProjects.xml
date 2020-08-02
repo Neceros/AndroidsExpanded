@@ -1,6 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <ResearchProjectDef>
+    <defName>Build_Drones</defName>
+    <label>task drones</label>
+    <tab>ChjAndroid</tab>
+    <description>Small drones designed to do singular tasks very well. Cheap in cost and quick to make.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>ChJDroidPrinter</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>3.80</researchViewX>
+    <researchViewY>1.40</researchViewY>
+  </ResearchProjectDef>
+
 	<ResearchProjectDef>
     <defName>Build_SpacerDroids</defName>
     <label>advanced droids</label>
