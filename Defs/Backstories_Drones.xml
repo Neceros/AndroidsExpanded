@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.BackstoryDef>
+		<defName>Backstory_Engi</defName>
+		<title>Engineer Drone</title>
+		<titleShort>Engi</titleShort>
+		<baseDescription>[PAWN_nameDef] is a colony crafted machine for manual labor like mining &amp; construction.</baseDescription>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ChjDroid</li>
+		</spawnCategories>
+		<workDisables>
+			<li>Intellectual</li>
+			<li>Violent</li>
+			<li>Social</li>
+			<li>Animals</li>
+			<li>Artistic</li>
+			<li>Caring</li>
+			<li>Crafting</li>
+			<li>Cooking</li>
+			<li>PlantWork</li>
+			<li>Hunting</li>
+		</workDisables>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>Backstory_Chef</defName>
+		<title>Chef Drone</title>
+		<titleShort>Chef</titleShort>
+		<baseDescription>[PAWN_nameDef] is a colony crafted machine for skilled at cooking &amp; farming.</baseDescription>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ChjDroid</li>
+		</spawnCategories>
+		<workDisables>
+			<li>Violent</li>
+			<li>Intellectual</li>
+			<li>Social</li>
+			<li>Animals</li>
+			<li>Artistic</li>
+			<li>Caring</li>
+			<li>Crafting</li>
+			<li>Mining</li>
+			<li>Hunting</li>
+		</workDisables>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>Backstory_Medic</defName>
+		<title>Medic Drone</title>
+		<titleShort>Medic</titleShort>
+		<baseDescription>[PAWN_nameDef] is a colony crafted machine designed to keep all living things healthy, perform surgeries, and heal boo boos.</baseDescription>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ChjDroid</li>
+		</spawnCategories>
+		<workDisables>
+			<li>Violent</li>
+			<li>Intellectual</li>
+			<li>Social</li>
+			<li>Animals</li>
+			<li>Artistic</li>
+			<li>Crafting</li>
+			<li>Cooking</li>
+			<li>PlantWork</li>
+			<li>Mining</li>
+			<li>Hunting</li>
+			<li>ManualSkilled</li>
+		</workDisables>
+	</AlienRace.BackstoryDef>
+	
+</Defs>

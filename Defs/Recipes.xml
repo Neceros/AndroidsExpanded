@@ -3,8 +3,8 @@
 
   <Androids.DroidCraftingDef>
     <defName>Android_SpacerDroid</defName>
-    <label>advanced worker droid</label>
-    <orderID>0</orderID>
+    <label>advanced droid</label>
+    <orderID>2</orderID>
     <costList>
       <Steel>340</Steel>
       <Plasteel>120</Plasteel>
@@ -18,8 +18,8 @@
 
   <Androids.DroidCraftingDef>
     <defName>Android_SpacerBattleDroid</defName>
-    <label>advanced battle droid</label>
-    <orderID>1</orderID>
+    <label>wardroid</label>
+    <orderID>3</orderID>
     <costList>
       <Steel>680</Steel>
       <Plasteel>220</Plasteel>
@@ -30,5 +30,45 @@
     <pawnKind>ChjSpacerBattleDroidColonist</pawnKind>
     <requiredResearch>Build_SpacerDroids</requiredResearch>
   </Androids.DroidCraftingDef>
+
+  <Androids.DroidCraftingDef>
+    <defName>NDrone_EngiBot</defName>
+    <label>engineer drone</label>
+    <orderID>4</orderID>
+    <costList>
+      <Steel>300</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <timeCost>18000</timeCost>
+    <pawnKind>NEngiDroneColonist</pawnKind>
+    <requiredResearch>Build_Drones</requiredResearch>
+  </Androids.DroidCraftingDef>
+
+  <Androids.DroidCraftingDef>
+    <defName>NDrone_ChefBot</defName>
+    <label>chef drone</label>
+    <orderID>5</orderID>
+    <costList>
+      <Steel>300</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <timeCost>18000</timeCost>
+    <pawnKind>NChefDroneColonist</pawnKind>
+    <requiredResearch>Build_Drones</requiredResearch>
+  </Androids.DroidCraftingDef>
+
+  <Androids.DroidCraftingDef>
+    <defName>NDrone_MedicBot</defName>
+    <label>medicine drone</label>
+    <orderID>6</orderID>
+    <costList>
+      <Steel>300</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <timeCost>18000</timeCost>
+    <pawnKind>NMedicDroneColonist</pawnKind>
+    <requiredResearch>Build_Drones</requiredResearch>
+  </Androids.DroidCraftingDef>
+
 
 </Defs>
