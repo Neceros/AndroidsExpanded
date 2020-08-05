@@ -36,8 +36,8 @@
     <label>engineer drone</label>
     <orderID>4</orderID>
     <costList>
-      <Steel>110</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <Steel>300</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
     <timeCost>18000</timeCost>
     <pawnKind>NEngiDroneColonist</pawnKind>
@@ -49,7 +49,7 @@
     <label>chef drone</label>
     <orderID>5</orderID>
     <costList>
-      <Steel>100</Steel>
+      <Steel>300</Steel>
       <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
     <timeCost>18000</timeCost>
@@ -62,8 +62,8 @@
     <label>medicine drone</label>
     <orderID>6</orderID>
     <costList>
-      <Steel>80</Steel>
-      <ComponentIndustrial>7</ComponentIndustrial>
+      <Steel>300</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
     <timeCost>18000</timeCost>
     <pawnKind>NMedicDroneColonist</pawnKind>
