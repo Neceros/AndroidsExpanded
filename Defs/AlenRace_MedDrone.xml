@@ -4,7 +4,7 @@
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>NMedicDrone</defName>
     <label>medic</label>
-    <description>Small drone constructed of simple materials and built in short time. This drone is highly capable in medicine, and is able to take care of most typical injuries.</description>
+    <description>Small drone constructed of simple materials built in short time. This drone is highly capable in medicine, and is able to take care of most typical injuries.</description>
     <uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>
     <comps>
       <li Class="Androids.CompProperties_EnergyTracker">
@@ -121,9 +121,9 @@
       </relationSettings>
     </alienRace>
     <statBases>
-      <MarketValue>400</MarketValue>
+      <MarketValue>660</MarketValue>
       <MoveSpeed>4.8</MoveSpeed>
-      <Flammability>0.25</Flammability>
+      <Flammability>0.55</Flammability>
       <ComfyTemperatureMin>-85</ComfyTemperatureMin>
       <ComfyTemperatureMax>85</ComfyTemperatureMax>
       <ToxicSensitivity>0</ToxicSensitivity>
@@ -136,7 +136,7 @@
       <ImmunityGainSpeed>10</ImmunityGainSpeed>
       <LeatherAmount>0</LeatherAmount>
       <MeatAmount>0</MeatAmount>
-      <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+      <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.0</ArmorRating_Blunt>
       <ArmorRating_Heat>1.0</ArmorRating_Heat>
       <CarryingCapacity>60</CarryingCapacity>

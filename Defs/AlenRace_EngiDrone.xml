@@ -4,7 +4,7 @@
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>NEngiDrone</defName>
     <label>engineer</label>
-    <description>Small drone constructed of simple materials and built in short time. This device is masterful in building &amp; mining, but is unable to do much else. Cannot fight.</description>
+    <description>Small drone constructed of simple materials built in short time. This device is masterful in building &amp; mining, but is unable to do much else. Cannot fight.</description>
     <uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>
     <comps>
       <li Class="Androids.CompProperties_EnergyTracker">
@@ -141,7 +141,7 @@
       <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
       <LeatherAmount>0</LeatherAmount>
       <MeatAmount>0</MeatAmount>
-      <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+      <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.0</ArmorRating_Blunt>
       <ArmorRating_Heat>1.0</ArmorRating_Heat>
       <CarryingCapacity>60</CarryingCapacity>

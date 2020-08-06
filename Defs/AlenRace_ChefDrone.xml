@@ -4,7 +4,7 @@
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>NChefDrone</defName>
     <label>chef</label>
-    <description>Small drone constructed of simple materials and built in short time. This device is masterful in tasks relating to food &amp; farming. It's designed to ensure everyone is fed and the kitchen is stocked.\n\nThis drone is unable to do combat nor any other skilled jobs.</description>
+    <description>Small drone constructed of simple materials built in short time. This device is masterful in tasks relating to food &amp; farming. It's designed to ensure everyone is fed and the kitchen is stocked.\n\nThis drone is unable to do combat nor any other skilled jobs.</description>
     <uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>
     <comps>
       <li Class="Androids.CompProperties_EnergyTracker">
@@ -136,7 +136,7 @@
       <ImmunityGainSpeed>10</ImmunityGainSpeed>
       <LeatherAmount>0</LeatherAmount>
       <MeatAmount>0</MeatAmount>
-      <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+      <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.0</ArmorRating_Blunt>
       <ArmorRating_Heat>1.0</ArmorRating_Heat>
       <CarryingCapacity>60</CarryingCapacity>
