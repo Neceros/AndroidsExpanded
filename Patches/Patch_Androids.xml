@@ -35,14 +35,14 @@
       <drawSize>(2,3.2)</drawSize>
     </value>
   </Operation>
-
+<!--
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThingDef[defName="ChJAndroidPrinter"]/graphicData</xpath>
     <value>
       <shaderType>CutoutComplex</shaderType>
     </value>
   </Operation>
-
+-->
   <Operation Class="PatchOperationReplace">
     <xpath>/Defs/ThingDef[defName="ChJAndroidPrinter"]/altitudeLayer</xpath>
     <value>

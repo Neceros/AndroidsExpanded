@@ -137,6 +137,7 @@
       <MentalBreakThreshold>0</MentalBreakThreshold>
       <SocialImpact>0</SocialImpact>
       <GlobalLearningFactor>1</GlobalLearningFactor>
+      <SmoothingSpeed>2</SmoothingSpeed>
       <WorkSpeedGlobal>1.33</WorkSpeedGlobal>
       <ImmunityGainSpeed>10</ImmunityGainSpeed>
       <LeatherAmount>0</LeatherAmount>
