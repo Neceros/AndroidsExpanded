@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>NDronePrinter</defName>
+		<label>drone printer</label>
+		<thingClass>AndroidsExpanded.Building_DroneCrafter</thingClass>
+		<description>An automatic fabricator when supplied with power and materials will assemble a drone. Drones are soulless automatons perfect for very specific industrial tasks in exchange for a very limited skillset.\n\nEasily destroyed; easily replaced, and nobody cares if they die.</description>
+		<graphicData>
+			<texPath>DronePrinter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.25,2.25)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<drawRotated>False</drawRotated>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(2,2)</size>
+		<rotatable>True</rotatable>
+		<drawerType>RealtimeOnly</drawerType>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<canOverlapZones>false</canOverlapZones>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<costList>
+			<Steel>300</Steel>
+			<ComponentIndustrial>15</ComponentIndustrial>
+		</costList>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>3200</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>0.1</Flammability>
+			<Cleanliness>-1</Cleanliness>
+			<Mass>35</Mass>
+		</statBases>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>54</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>500</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(235, 235, 235, 0)</glowColor>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<building>
+		</building>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>Build_Drones</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="Androids.PawnCrafterProperties">
+				<craftingSound>Interact_ConstructMetal</craftingSound>
+				<customOrderProcessor>true</customOrderProcessor>
+				<customCraftingTime>true</customCraftingTime>
+				<pawnCraftedLetterLabel>AndroidDroidManufactoryLetterLabel</pawnCraftedLetterLabel>
+				<pawnCraftedLetterText>AndroidDroidManufactoryLetterDescription</pawnCraftedLetterText>
+				<resourceTick>2500</resourceTick>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

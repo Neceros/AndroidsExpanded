@@ -35,14 +35,7 @@
       <drawSize>(2,3.2)</drawSize>
     </value>
   </Operation>
-<!--
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[defName="ChJAndroidPrinter"]/graphicData</xpath>
-    <value>
-      <shaderType>CutoutComplex</shaderType>
-    </value>
-  </Operation>
--->
+
   <Operation Class="PatchOperationReplace">
     <xpath>/Defs/ThingDef[defName="ChJAndroidPrinter"]/altitudeLayer</xpath>
     <value>
@@ -61,6 +54,22 @@
     <xpath>/Defs/ThingDef[defName="ChJDroidPrinter"]/altitudeLayer</xpath>
     <value>
       <altitudeLayer>BuildingOnTop</altitudeLayer>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjDroid"]/alienRace/generalSettings/alienPartGenerator/alienbodytypes</xpath>
+    <value>
+      <alienbodytypes>
+        <li>Female</li>
+      </alienbodytypes>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjDroid"]/modExtensions/li[@Class = "Androids.DroidSpawnProperties"]/bodyType</xpath>
+    <value>
+      <bodyType>Female</bodyType>
     </value>
   </Operation>
 

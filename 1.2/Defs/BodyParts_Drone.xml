@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartGroupDef>
+    <defName>DroneHand</defName>
+    <label>tool hand</label>
+    <labelShort>tool</labelShort>
+    <listOrder>80</listOrder>
+  </BodyPartGroupDef>
+
+
+
+
+  <BodyPartDef>
+    <defName>DroneShell</defName>
+    <label>shell</label>
+    <hitPoints>25</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneRibcage</defName>
+    <label>vacuum shell</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>BreathingSourceCage</li>
+    </tags>
+    <solid>true</solid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneHead</defName>
+    <label>front face-plate</label>
+    <hitPoints>16</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneNeck</defName>
+    <label>neck</label>
+    <hitPoints>5</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>BreathingPathway</li>
+      <li>EatingPathway</li>
+      <li>TalkingPathway</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneSensor</defName>
+    <label>sensor</label>
+    <hitPoints>5</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <socketed>true</socketed>
+    <tags>
+      <li>SightSource</li>
+      <li>HearingSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneShoulder</defName>
+    <label>shoulder</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneArm</defName>
+    <label>main arm</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneHand</defName>
+    <label>specialized tool-hand</label>
+    <hitPoints>5</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <frostbiteVulnerability>0.001</frostbiteVulnerability>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+  </BodyPartDef>
+<!--
+  <BodyPartDef>
+    <defName>DronePinky</defName>
+    <label>pinky</label>
+    <hitPoints>7</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <frostbiteVulnerability>0.001</frostbiteVulnerability>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>ManipulationLimbDigit</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneMiddleFinger</defName>
+    <label>middle finger</label>
+    <hitPoints>7</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <frostbiteVulnerability>0.001</frostbiteVulnerability>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>ManipulationLimbDigit</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneIndexFinger</defName>
+    <label>index finger</label>
+    <hitPoints>7</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <frostbiteVulnerability>0.001</frostbiteVulnerability>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>ManipulationLimbDigit</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneThumb</defName>
+    <label>thumb</label>
+    <hitPoints>7</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <frostbiteVulnerability>0.001</frostbiteVulnerability>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>ManipulationLimbDigit</li>
+    </tags>
+  </BodyPartDef> -->
+
+  <BodyPartDef>
+    <defName>LeftDroneLeg</defName>
+    <label>left wheel housing</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>LeftDroneFoot</defName>
+    <label>left tread wheel</label>
+    <hitPoints>15</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RightDroneLeg</defName>
+    <label>right wheel housing</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RightDroneFoot</defName>
+    <label>right tread wheel</label>
+    <hitPoints>15</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+
+
+
+
+  <!-- Inside bits -->
+
+  <BodyPartDef>
+    <defName>DroneHeart</defName>
+    <label>engine</label>
+    <hitPoints>5</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>1</bleedRate>
+    <tags>
+      <li>BloodPumpingSource</li>
+    </tags>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneLung</defName>
+    <label>vacuum system</label>
+    <hitPoints>7</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>1</bleedRate>
+    <tags>
+      <li>BreathingSource</li>
+    </tags>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneKidney</defName>
+    <label>engine scrubber</label>
+    <hitPoints>5</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>1</bleedRate>
+    <tags>
+      <li>BloodFiltrationLiver</li>
+    </tags>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneLiver</defName>
+    <label>system stabilizer</label>
+    <hitPoints>5</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>1</bleedRate>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneStomach</defName>
+    <label>internal battery</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>1</bleedRate>
+    <tags>
+      <li>MetabolismSource</li>
+    </tags>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneBrain</defName>
+    <label>simple brain</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>1</bleedRate>
+    <tags>
+      <li>ConsciousnessSource</li>
+    </tags>
+  </BodyPartDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+
+  <BodyPartDef>
+    <defName>DroneShell</defName>
+    <label>shell</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneFramework</defName>
+    <label>framework</label>
+    <hitPoints>25</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>BreathingSourceCage</li>
+    </tags>
+    <solid>true</solid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneEngine</defName>
+    <label>engine</label>
+    <hitPoints>15</hitPoints>
+    <permanentInjuryChanceFactor>0.22</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>2</bleedRate>
+    <tags>
+      <li>BloodPumpingSource</li>
+      <li>BreathingSource</li>
+      <li>MetabolismSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneSensor</defName>
+    <label>sensor</label>
+    <hitPoints>5</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <socketed>true</socketed>
+    <tags>
+      <li>SightSource</li>
+      <li>HearingSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneShoulder</defName>
+    <label>shoulder joint</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneArm</defName>
+    <label>arm</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneHand</defName>
+    <label>multi-tool hand</label>
+    <hitPoints>5</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+      <li>ManipulationLimbDigit</li>
+    </tags>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DronePelvis</defName>
+    <label>main axle</label>
+    <hitPoints>8</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>1</bleedRate>
+    <tags>
+      <li>BloodFiltrationLiver</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>LeftDroneWheel</defName>
+    <label>left tread wheel</label>
+    <hitPoints>15</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RightDroneWheel</defName>
+    <label>right tread wheel</label>
+    <hitPoints>15</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroneMotherboard</defName>
+    <label>droid motherboard</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>false</solid>
+    <tags>
+      <li>ConsciousnessSource</li>
+    </tags>
+  </BodyPartDef> -->
+
+</Defs>

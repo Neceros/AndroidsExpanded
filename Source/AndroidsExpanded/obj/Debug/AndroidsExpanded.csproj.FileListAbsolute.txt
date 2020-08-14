@@ -1,3 +1,4 @@
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AndroidsExpanded\Assemblies\AndroidsExpanded.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AndroidsExpanded\Source\AndroidsExpanded\obj\Debug\AndroidsExpanded.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AndroidsExpanded\Source\AndroidsExpanded\obj\Debug\AndroidsExpanded.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AndroidsExpanded\Source\AndroidsExpanded\obj\Debug\AndroidsExpanded.csprojAssemblyReference.cache

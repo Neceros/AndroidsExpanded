@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>ChjSpacerDroidColonist</defName>
+		<label>advanced droid colonist</label>
+		<race>ChjSpacerDroid</race>
+		<defaultFactionType>ChjPlayerAndroidColony</defaultFactionType>
+		<backstoryCategories>
+			<li>ChjDroid</li>
+		</backstoryCategories>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+		<apparelTags>
+			<li>Spacer</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>0</min>
+			<max>0</max>
+		</apparelMoney>
+		<weaponTags>
+			<li>Gun</li>
+			<li>NonNeolithicOnlyMelee</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>0</min>
+			<max>0</max>
+		</weaponMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>ChjSpacerBattleDroidColonist</defName>
+		<label>advanced battle droid</label>
+		<race>ChjSpacerBattleDroid</race>
+		<defaultFactionType>ChjPlayerAndroidColony</defaultFactionType>
+		<backstoryCategories>
+			<li>ChjDroid</li>
+		</backstoryCategories>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+		<apparelTags>
+			<li>Spacer</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>0</min>
+			<max>0</max>
+		</apparelMoney>
+		<weaponTags>
+			<li>Gun</li>
+			<li>NonNeolithicOnlyMelee</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>0</min>
+			<max>0</max>
+		</weaponMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>NEngiDroneColonist</defName>
+		<label>engineer drone</label>
+		<race>NEngiDrone</race>
+		<defaultFactionType>ChjPlayerAndroidColony</defaultFactionType>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>NChefDroneColonist</defName>
+		<label>chef drone</label>
+		<race>NChefDrone</race>
+		<defaultFactionType>ChjPlayerAndroidColony</defaultFactionType>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>NMedicDroneColonist</defName>
+		<label>medicine drone</label>
+		<race>NMedicDrone</race>
+		<defaultFactionType>ChjPlayerAndroidColony</defaultFactionType>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+	</PawnKindDef>
+
+</Defs>

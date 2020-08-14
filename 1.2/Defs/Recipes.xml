@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <Androids.DroidCraftingDef>
+    <defName>Android_SpacerDroid</defName>
+    <label>advanced droid</label>
+    <orderID>2</orderID>
+    <costList>
+      <Steel>450</Steel>
+      <Plasteel>240</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <timeCost>48000</timeCost>
+    <pawnKind>ChjSpacerDroidColonist</pawnKind>
+    <requiredResearch>Build_SpacerDroids</requiredResearch>
+  </Androids.DroidCraftingDef>
+
+  <Androids.DroidCraftingDef>
+    <defName>Android_SpacerBattleDroid</defName>
+    <label>wardroid</label>
+    <orderID>3</orderID>
+    <costList>
+      <Steel>680</Steel>
+      <Plasteel>320</Plasteel>
+      <ComponentIndustrial>24</ComponentIndustrial>
+      <ComponentSpacer>12</ComponentSpacer>
+    </costList>
+    <timeCost>128000</timeCost>
+    <pawnKind>ChjSpacerBattleDroidColonist</pawnKind>
+    <requiredResearch>Build_SpacerDroids</requiredResearch>
+  </Androids.DroidCraftingDef>
+
+  <AndroidsExpanded.DroneCraftingDef>
+    <defName>NDrone_EngiBot</defName>
+    <label>engineer drone</label>
+    <orderID>4</orderID>
+    <costList>
+      <Steel>300</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <timeCost>22000</timeCost>
+    <pawnKind>NEngiDroneColonist</pawnKind>
+    <requiredResearch>Build_Drones</requiredResearch>
+  </AndroidsExpanded.DroneCraftingDef>
+
+  <AndroidsExpanded.DroneCraftingDef>
+    <defName>NDrone_ChefBot</defName>
+    <label>chef drone</label>
+    <orderID>5</orderID>
+    <costList>
+      <Steel>300</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <timeCost>22000</timeCost>
+    <pawnKind>NChefDroneColonist</pawnKind>
+    <requiredResearch>Build_Drones</requiredResearch>
+  </AndroidsExpanded.DroneCraftingDef>
+
+  <AndroidsExpanded.DroneCraftingDef>
+    <defName>NDrone_MedicBot</defName>
+    <label>medicine drone</label>
+    <orderID>6</orderID>
+    <costList>
+      <Steel>300</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <timeCost>22000</timeCost>
+    <pawnKind>NMedicDroneColonist</pawnKind>
+    <requiredResearch>Build_Drones</requiredResearch>
+  </AndroidsExpanded.DroneCraftingDef>
+
+
+</Defs>
