@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<rjw.RaceGroupDef Abstract="True">
+		
+		<defName>AndroidDrones</defName>
+		
+		<raceNames>
+			<li>NChefDrone</li>
+			<li>NMedicDrone</li>
+			<li>NEngiDrone</li>
+		</raceNames>
+		
+		<anuses></anuses>
+		<femaleBreasts></femaleBreasts>
+		<femaleGenitals></femaleGenitals>
+		<maleBreasts></maleBreasts>
+		<maleGenitals></maleGenitals>
+		<tags></tags>
+	</rjw.RaceGroupDef>
+</Defs>

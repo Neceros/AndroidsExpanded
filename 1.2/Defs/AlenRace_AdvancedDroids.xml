@@ -370,6 +370,9 @@
     </modExtensions>
   </AlienRace.ThingDef_AlienRace>
 
+
+
+
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>ChjSpacerBattleDroid</defName>
     <label>Wardroid</label>
@@ -390,6 +393,12 @@
           <li>ChjAndroid_ChemfuelGenerator</li>
           <li>Apparel_ShieldBelt</li>
           <li>SmokepopBelt</li>
+          <li>Apparel_PsychicShockLance</li>
+          <li>Apparel_PsychicInsanityLance</li>
+          <li>Apparel_PackJump</li>
+          <li>BroadshieldPack</li>
+          <li>OrbitalTargeterBombardment</li>
+          <li>OrbitalTargeterPowerBeam</li>
         </whiteApparelList>
       </raceRestriction>
       <generalSettings>

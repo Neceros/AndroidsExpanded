@@ -73,4 +73,35 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjBattleDroid"]/alienRace/generalSettings/alienPartGenerator/customDrawSize</xpath>
+    <value>
+      <customDrawSize>(1.5,1.5)</customDrawSize>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjBattleDroid"]/alienRace/generalSettings/alienPartGenerator</xpath>
+    <value>
+      <headOffset>(0, 0.1)</headOffset>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjBattleDroid"]/alienRace/raceRestriction/whiteApparelList</xpath>
+    <value>
+      <whiteApparelList>
+        <li>ChjAndroid_ChemfuelGenerator</li>
+        <li>Apparel_ShieldBelt</li>
+        <li>SmokepopBelt</li>
+        <li>Apparel_PsychicShockLance</li>
+        <li>Apparel_PsychicInsanityLance</li>
+        <li>Apparel_PackJump</li>
+        <li>BroadshieldPack</li>
+        <li>OrbitalTargeterBombardment</li>
+        <li>OrbitalTargeterPowerBeam</li>
+      </whiteApparelList>
+    </value>
+  </Operation>
+
 </Patch>

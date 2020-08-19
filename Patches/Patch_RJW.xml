@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+  <!-- Allows droids to "breathe" in space -->
+
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>RimJobWorld</li>
+    </mods>
+    <match Class="PatchOperationAttributeRemove">
+      <xpath>/Defs/rjw.RaceGroupDef[defName="AndroidDrones"]</xpath>
+      <attribute>Abstract</attribute>
+    </match>
+  </Operation>
+
+
+</Patch>
