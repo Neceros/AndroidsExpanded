@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/Androids.DroidCraftingDef[defName="Android_Droid"]/label</xpath>
+    <value>
+      <label>worker droid</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/Androids.DroidCraftingDef[defName="Android_BattleDroid"]/label</xpath>
+    <value>
+      <label>battle droid</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjBattleDroid"]/label</xpath>
+    <value>
+      <label>Battledroid</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjBattleDroid" or defName="ChjDroid"]/race/body</xpath>
+    <value>
+      <body>DroidBody</body>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ChJAndroidPrinter"]/graphicData/drawSize</xpath>
+    <value>
+      <drawSize>(2,3.2)</drawSize>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ChJAndroidPrinter"]/altitudeLayer</xpath>
+    <value>
+      <altitudeLayer>BuildingOnTop</altitudeLayer>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ChJDroidPrinter"]/graphicData/drawSize</xpath>
+    <value>
+      <drawSize>(4.75,4.75)</drawSize>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ChJDroidPrinter"]/altitudeLayer</xpath>
+    <value>
+      <altitudeLayer>BuildingOnTop</altitudeLayer>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjDroid"]/alienRace/generalSettings/alienPartGenerator/alienbodytypes</xpath>
+    <value>
+      <alienbodytypes>
+        <li>Female</li>
+      </alienbodytypes>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjDroid"]/modExtensions/li[@Class = "Androids.DroidSpawnProperties"]/bodyType</xpath>
+    <value>
+      <bodyType>Female</bodyType>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjBattleDroid"]/alienRace/generalSettings/alienPartGenerator/customDrawSize</xpath>
+    <value>
+      <customDrawSize>(1.5,1.5)</customDrawSize>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjBattleDroid"]/alienRace/generalSettings/alienPartGenerator</xpath>
+    <value>
+      <headOffset>(0, 0.1)</headOffset>
+    </value>
+  </Operation>
+
+</Patch>

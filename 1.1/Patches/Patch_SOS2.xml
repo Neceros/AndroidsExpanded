@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+  <!-- Allows droids to "breathe" in space -->
+
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Save Our Ship 2</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjDroid" or defName="ChjBattleDroid" or defName="ChjSpacerBattleDroid" or defName="ChjSpacerDroid" or defName="NEngiDrone" or defName="NChefDrone" or defName="NMedicDrone"]</xpath>
+      <value>
+        <tradeTags>
+          <li>AnimalInsectSpace</li>
+        </tradeTags>
+      </value>
+    </match>
+  </Operation>
+
+
+</Patch>
