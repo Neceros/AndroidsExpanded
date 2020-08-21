@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>NSalvageRobotCorpse</defName>
+    <durationDays>0.33</durationDays>
+    <stackLimit>1</stackLimit>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>i salvaged a robot</label>
+        <description>I repurposed mechanical materials for the colony.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>NKnowSalvageRobotCorpse</defName>
+    <durationDays>0</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>you shouldn't see this</label>
+        <description>I don't know how you found this.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

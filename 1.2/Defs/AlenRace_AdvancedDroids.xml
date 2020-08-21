@@ -168,6 +168,10 @@
         <canStillReceiveThoughts>
           <li>ChJDroidAlways</li>
         </canStillReceiveThoughts>
+        <butcherThoughtGeneral>
+          <thought>NSalvageRobotCorpse</thought>
+          <knowThought>NKnowSalvageRobotCorpse</knowThought>
+        </butcherThoughtGeneral>
       </thoughtSettings>
       <relationSettings>
         <relationChanceModifierChild>0</relationChanceModifierChild>
@@ -547,6 +551,10 @@
         <canStillReceiveThoughts>
           <li>ChJDroidAlways</li>
         </canStillReceiveThoughts>
+        <butcherThoughtGeneral>
+          <thought>NSalvageRobotCorpse</thought>
+          <knowThought>NKnowSalvageRobotCorpse</knowThought>
+        </butcherThoughtGeneral>
       </thoughtSettings>
       <relationSettings>
         <relationChanceModifierChild>0</relationChanceModifierChild>
