@@ -3,9 +3,9 @@
 
 
   <BodyPartDef>
-    <defName>DroidHeart</defName>
+    <defName>WarDroidHeart</defName>
     <label>coolant pump</label>
-    <hitPoints>12</hitPoints>
+    <hitPoints>30</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>2</bleedRate>
@@ -16,9 +16,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidLung</defName>
+    <defName>WarDroidLung</defName>
     <label>induction fan</label>
-    <hitPoints>12</hitPoints>
+    <hitPoints>20</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>1</bleedRate>	
@@ -29,9 +29,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidKidney</defName>
+    <defName>WarDroidKidney</defName>
     <label>coolant scrubber</label>
-    <hitPoints>6</hitPoints>
+    <hitPoints>20</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>2</bleedRate>
@@ -42,9 +42,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidLiver</defName>
+    <defName>WarDroidLiver</defName>
     <label>system stabilizer</label>
-    <hitPoints>10</hitPoints>
+    <hitPoints>20</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>1</bleedRate>
@@ -52,9 +52,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidStomach</defName>
+    <defName>WarDroidStomach</defName>
     <label>energy distributor</label>
-    <hitPoints>15</hitPoints>
+    <hitPoints>25</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>1</bleedRate>

@@ -23,9 +23,16 @@
   </Operation>
 
   <Operation Class="PatchOperationReplace">
-    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjBattleDroid" or defName="ChjDroid"]/race/body</xpath>
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjDroid"]/race/body</xpath>
     <value>
       <body>DroidBody</body>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjBattleDroid"]/race/body</xpath>
+    <value>
+      <body>BattleDroidBody</body>
     </value>
   </Operation>
 
@@ -84,6 +91,20 @@
     <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjBattleDroid"]/alienRace/generalSettings/alienPartGenerator</xpath>
     <value>
       <headOffset>(0, 0.1)</headOffset>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjDroid"]/tools/li[label/text()="left fist" or label/text()="right fist"]/linkedBodyPartsGroup</xpath>
+    <value>
+      <linkedBodyPartsGroup>DroidHand</linkedBodyPartsGroup>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjBattleDroid"]/tools/li[label/text()="left bladed fist" or label/text()="right bladed fist"]/linkedBodyPartsGroup</xpath>
+    <value>
+      <linkedBodyPartsGroup>BattleDroidHand</linkedBodyPartsGroup>
     </value>
   </Operation>
 

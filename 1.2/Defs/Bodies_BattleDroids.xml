@@ -2,10 +2,10 @@
 <Defs>
   
   <BodyDef>
-    <defName>DroidBody</defName>
-    <label>Droid</label>
+    <defName>BattleDroidBody</defName>
+    <label>Battle Droid</label>
     <corePart>
-      <def>Frame</def>
+      <def>BattleFrame</def>
       <height>Middle</height>
       <depth>Outside</depth>
       <groups>
@@ -13,7 +13,7 @@
       </groups>
       <parts>
         <li>
-          <def>Chasis</def>
+          <def>BattleChasis</def>
           <coverage>0.3</coverage>
           <depth>Inside</depth>
           <groups>
@@ -21,7 +21,7 @@
           </groups>
         </li>
         <li>
-          <def>DroidHeart</def>
+          <def>BattleDroidHeart</def>
           <coverage>0.015</coverage>
           <depth>Inside</depth>
           <groups>
@@ -29,7 +29,7 @@
           </groups>
         </li>
         <li>
-          <def>DroidLung</def>
+          <def>BattleDroidLung</def>
           <coverage>0.02</coverage>
           <depth>Inside</depth>
           <groups>
@@ -37,7 +37,7 @@
           </groups>
         </li>
         <li>
-          <def>DroidLung</def>
+          <def>BattleDroidLung</def>
           <coverage>0.02</coverage>
           <depth>Inside</depth>
           <groups>
@@ -45,7 +45,7 @@
           </groups>
         </li>
         <li>
-          <def>DroidKidney</def>
+          <def>BattleDroidKidney</def>
           <coverage>0.01</coverage>
           <depth>Inside</depth>
           <groups>
@@ -53,7 +53,7 @@
           </groups>
         </li>
         <li>
-          <def>DroidKidney</def>
+          <def>BattleDroidKidney</def>
           <coverage>0.01</coverage>
           <depth>Inside</depth>
           <groups>
@@ -61,7 +61,7 @@
           </groups>
         </li>
         <li>
-          <def>DroidLiver</def>
+          <def>BattleDroidLiver</def>
           <coverage>0.023</coverage>
           <depth>Inside</depth>
           <groups>
@@ -69,7 +69,7 @@
           </groups>
         </li>
         <li>
-          <def>DroidNeck</def>
+          <def>BattleDroidNeck</def>
           <coverage>0</coverage>
           <height>Top</height>
           <parts>
@@ -83,7 +83,7 @@
               </groups>
               <parts>
                 <li>
-                  <def>DroidBrain</def>
+                  <def>BattleDroidBrain</def>
                   <coverage>0.10</coverage>
                   <depth>Inside</depth>
                   <groups>
@@ -92,7 +92,7 @@
                   </groups>
                 </li>
                 <li>
-                  <def>DroidSightSensor</def>
+                  <def>BattleDroidSightSensor</def>
                   <coverage>0.13</coverage>
                   <groups>
                     <li>FullHead</li>
@@ -100,7 +100,7 @@
                   </groups>
                 </li>
                 <li>
-                  <def>DroidSightSensor</def>
+                  <def>BattleDroidSightSensor</def>
                   <coverage>0.13</coverage>
                   <groups>
                     <li>FullHead</li>
@@ -108,7 +108,7 @@
                   </groups>
                 </li>
                 <li>
-                  <def>DroidHearingSensor</def>
+                  <def>BattleDroidHearingSensor</def>
                   <coverage>0.10</coverage>
                   <groups>
                     <li>UpperHead</li>
@@ -116,7 +116,7 @@
                   </groups>
                 </li>
                 <li>
-                  <def>DroidHearingSensor</def>
+                  <def>BattleDroidHearingSensor</def>
                   <coverage>0.10</coverage>
                   <groups>
                     <li>UpperHead</li>
@@ -124,7 +124,7 @@
                   </groups>
                 </li>
                 <li>
-                  <def>DroidSmellSensor</def>
+                  <def>BattleDroidSmellSensor</def>
                   <coverage>0.10</coverage>
                   <groups>
                     <li>FullHead</li>
@@ -143,30 +143,30 @@
           </parts>
         </li>
         <li>
-          <def>DroidShoulder</def>
+          <def>BattleDroidShoulder</def>
           <coverage>0.15</coverage>
           <groups>
             <li>Shoulders</li>
           </groups>
           <parts>
             <li>
-              <def>DroidArm</def>
+              <def>BattleDroidArm</def>
               <coverage>0.65</coverage>
               <groups>
                 <li>Arms</li>
               </groups>
               <parts>
                 <li>
-                  <def>DroidHand</def>
+                  <def>BattleDroidHand</def>
                   <coverage>0.2</coverage>
                   <height>Bottom</height>
                   <groups>
                     <li>Hands</li>
-                    <li>DroidHand</li>
+                    <li>BattleDroidHand</li>
                   </groups>
                   <parts>
                     <li>
-                      <def>DroidFinger</def>
+                      <def>BattleDroidFinger</def>
                       <coverage>0.15</coverage>
                       <groups>
                         <li>Hands</li>
@@ -174,7 +174,7 @@
                       </groups>
                     </li>
                     <li>
-                      <def>DroidFinger</def>
+                      <def>BattleDroidFinger</def>
                       <coverage>0.15</coverage>
                       <groups>
                         <li>Hands</li>
@@ -182,7 +182,7 @@
                       </groups>
                     </li>
                     <li>
-                      <def>DroidFinger</def>
+                      <def>BattleDroidFinger</def>
                       <coverage>0.15</coverage>
                       <groups>
                         <li>Hands</li>
@@ -190,7 +190,7 @@
                       </groups>
                     </li>
                     <li>
-                      <def>DroidFinger</def>
+                      <def>BattleDroidFinger</def>
                       <coverage>0.15</coverage>
                       <groups>
                         <li>Hands</li>
@@ -198,7 +198,7 @@
                       </groups>
                     </li>
                     <li>
-                      <def>DroidFinger</def>
+                      <def>BattleDroidFinger</def>
                       <coverage>0.15</coverage>
                       <groups>
                         <li>Hands</li>
@@ -212,30 +212,30 @@
           </parts>
         </li>
         <li>
-          <def>DroidShoulder</def>
+          <def>BattleDroidShoulder</def>
           <coverage>0.15</coverage>
           <groups>
             <li>Shoulders</li>
           </groups>
           <parts>
             <li>
-              <def>DroidArm</def>
+              <def>BattleDroidArm</def>
               <coverage>0.65</coverage>
               <groups>
                 <li>Arms</li>
               </groups>
               <parts>
                 <li>
-                  <def>DroidHand</def>
+                  <def>BattleDroidHand</def>
                   <coverage>0.2</coverage>
                   <height>Bottom</height>
                   <groups>
                     <li>Hands</li>
-                    <li>DroidHand</li>
+                    <li>BattleDroidHand</li>
                   </groups>
                   <parts>
                     <li>
-                      <def>DroidFinger</def>
+                      <def>BattleDroidFinger</def>
                       <coverage>0.15</coverage>
                       <groups>
                         <li>RightHand</li>
@@ -243,7 +243,7 @@
                       </groups>
                     </li>
                     <li>
-                      <def>DroidFinger</def>
+                      <def>BattleDroidFinger</def>
                       <coverage>0.15</coverage>
                       <groups>
                         <li>RightHand</li>
@@ -251,7 +251,7 @@
                       </groups>
                     </li>
                     <li>
-                      <def>DroidFinger</def>
+                      <def>BattleDroidFinger</def>
                       <coverage>0.15</coverage>
                       <groups>
                         <li>RightHand</li>
@@ -259,7 +259,7 @@
                       </groups>
                     </li>
                     <li>
-                      <def>DroidFinger</def>
+                      <def>BattleDroidFinger</def>
                       <coverage>0.15</coverage>
                       <groups>
                         <li>RightHand</li>
@@ -267,7 +267,7 @@
                       </groups>
                     </li>
                     <li>
-                      <def>DroidFinger</def>
+                      <def>BattleDroidFinger</def>
                       <coverage>0.15</coverage>
                       <groups>
                         <li>RightHand</li>
@@ -289,7 +289,7 @@
           </groups>
         </li>
         <li>
-          <def>DroidLeg</def>
+          <def>BattleDroidLeg</def>
           <coverage>0.15</coverage>
           <height>Bottom</height>
           <groups>
@@ -297,7 +297,7 @@
           </groups>
           <parts>
             <li>
-              <def>DroidFoot</def>
+              <def>BattleDroidFoot</def>
               <coverage>0.2</coverage>
               <groups>
                 <li>Feet</li>
@@ -306,7 +306,7 @@
           </parts>
         </li>
         <li>
-          <def>DroidLeg</def>
+          <def>BattleDroidLeg</def>
           <coverage>0.15</coverage>
           <height>Bottom</height>
           <groups>
@@ -314,7 +314,7 @@
           </groups>
           <parts>
             <li>
-              <def>DroidFoot</def>
+              <def>BattleDroidFoot</def>
               <coverage>0.2</coverage>
               <groups>
                 <li>Feet</li>

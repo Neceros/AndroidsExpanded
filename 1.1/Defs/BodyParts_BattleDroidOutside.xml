@@ -3,17 +3,17 @@
 
   <!-- Body groups -->
   <BodyPartGroupDef>
-    <defName>DroidHand</defName>
-    <label>droid fist</label>
+    <defName>BattleDroidHand</defName>
+    <label>battle droid fist</label>
     <labelShort>fist</labelShort>
     <listOrder>79</listOrder>
   </BodyPartGroupDef>
 
 
   <BodyPartDef>
-    <defName>Chasis</defName>
+    <defName>BattleChasis</defName>
     <label>chasis</label>
-    <hitPoints>40</hitPoints>
+    <hitPoints>60</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -24,9 +24,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>Frame</defName>
+    <defName>BattleFrame</defName>
     <label>frame</label>
-    <hitPoints>32</hitPoints>
+    <hitPoints>50</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -34,9 +34,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidNeck</defName>
-    <label>neck bearing</label>
-    <hitPoints>14</hitPoints>
+    <defName>BattleDroidNeck</defName>
+    <label>main conduit</label>
+    <hitPoints>25</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -49,9 +49,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidSightSensor</defName>
+    <defName>BattleDroidSightSensor</defName>
     <label>sight sensor</label>
-    <hitPoints>7</hitPoints>
+    <hitPoints>15</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -62,9 +62,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidHearingSensor</defName>
+    <defName>BattleDroidHearingSensor</defName>
     <label>audio sensor</label>
-    <hitPoints>5</hitPoints>
+    <hitPoints>10</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -75,9 +75,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidSmellSensor</defName>
+    <defName>BattleDroidSmellSensor</defName>
     <label>scent detector</label>
-    <hitPoints>5</hitPoints>
+    <hitPoints>10</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -85,9 +85,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidShoulder</defName>
-    <label>shoulder bar</label>
-    <hitPoints>30</hitPoints>
+    <defName>BattleDroidShoulder</defName>
+    <label>shoulder casing</label>
+    <hitPoints>40</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -98,9 +98,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidArm</defName>
-    <label>articulating rod</label>
-    <hitPoints>30</hitPoints>
+    <defName>BattleDroidArm</defName>
+    <label>powered arm</label>
+    <hitPoints>35</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -111,9 +111,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidHand</defName>
-    <label>droid hand</label>
-    <hitPoints>20</hitPoints>
+    <defName>BattleDroidHand</defName>
+    <label>grabber</label>
+    <hitPoints>30</hitPoints>
     <frostbiteVulnerability>0</frostbiteVulnerability>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
@@ -125,8 +125,8 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidFinger</defName>
-    <label>droid finger</label>
+    <defName>BattleDroidFinger</defName>
+    <label>finger</label>
     <hitPoints>10</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <frostbiteVulnerability>0.01</frostbiteVulnerability>
@@ -139,9 +139,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidLeg</defName>
+    <defName>BattleDroidLeg</defName>
     <label>tread casing</label>
-    <hitPoints>30</hitPoints>
+    <hitPoints>45</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -152,9 +152,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidFoot</defName>
+    <defName>BattleDroidFoot</defName>
     <label>tread wheel</label>
-    <hitPoints>26</hitPoints>
+    <hitPoints>40</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -165,9 +165,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidBrain</defName>
-    <label>computing matrix</label>
-    <hitPoints>15</hitPoints>
+    <defName>BattleDroidBrain</defName>
+    <label>simple computing matrix</label>
+    <hitPoints>30</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>

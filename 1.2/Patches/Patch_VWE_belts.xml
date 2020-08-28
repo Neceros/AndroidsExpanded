@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="VWE_Apparel_GrenadeFragBelt"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjBattleDroid"]/alienRace/raceRestriction/whiteApparelList</xpath>
+      <value>
+        <li>VWE_Apparel_GrenadeFragBelt</li>
+        <li>VWE_Apparel_GrenadeMolotovBelt</li>
+        <li>VWE_Apparel_GrenadeEMPBelt</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="VWE_Apparel_GrenadeFragBelt"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjSpacerBattleDroid"]/alienRace/raceRestriction/whiteApparelList</xpath>
+      <value>
+        <li>VWE_Apparel_GrenadeFragBelt</li>
+        <li>VWE_Apparel_GrenadeMolotovBelt</li>
+        <li>VWE_Apparel_GrenadeEMPBelt</li>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

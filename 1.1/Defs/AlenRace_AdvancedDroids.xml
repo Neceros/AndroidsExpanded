@@ -186,7 +186,7 @@
         </capacities>
         <power>20</power>
         <cooldownTime>1.6</cooldownTime>
-        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>DroidHand</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -203,7 +203,7 @@
         </capacities>
         <power>20</power>
         <cooldownTime>1.6</cooldownTime>
-        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>DroidHand</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -531,7 +531,7 @@
         </capacities>
         <power>40</power>
         <cooldownTime>1.7</cooldownTime>
-        <linkedBodyPartsGroup>LeftDroidHand</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>WarDroidHand</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -550,7 +550,7 @@
         </capacities>
         <power>40</power>
         <cooldownTime>1.7</cooldownTime>
-        <linkedBodyPartsGroup>RightDroidHand</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>WarDroidHand</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -569,7 +569,7 @@
         </capacities>
         <power>40</power>
         <cooldownTime>1.7</cooldownTime>
-        <linkedBodyPartsGroup>LeftDroidHand</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>WarDroidHand</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -588,7 +588,7 @@
         </capacities>
         <power>40</power>
         <cooldownTime>1.7</cooldownTime>
-        <linkedBodyPartsGroup>LowerRightDroidHand</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>WarDroidHand</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -619,7 +619,7 @@
       <baseHungerRate>0</baseHungerRate>
       <leatherDef>Leather_ChJAndroid</leatherDef>
       <nameCategory>HumanStandard</nameCategory>
-      <body>WardroidBody</body>
+      <body>WarDroidBody</body>
       <bloodDef>ChjFilthCoolant</bloodDef>
       <deathActionWorkerClass>Androids.DeathActionWorker_Droid</deathActionWorkerClass>
       <baseBodySize>3.00</baseBodySize>

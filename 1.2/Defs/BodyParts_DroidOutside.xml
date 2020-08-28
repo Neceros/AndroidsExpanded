@@ -3,39 +3,17 @@
 
   <!-- Body groups -->
   <BodyPartGroupDef>
-    <defName>LeftDroidHand</defName>
-    <label>left droid fist</label>
+    <defName>DroidHand</defName>
+    <label>droid fist</label>
     <labelShort>fist</labelShort>
     <listOrder>79</listOrder>
   </BodyPartGroupDef>
-  
-  <BodyPartGroupDef>
-    <defName>RightDroidHand</defName>
-    <label>right droid fist</label>
-    <labelShort>fist</labelShort>
-    <listOrder>78</listOrder>
-  </BodyPartGroupDef>
-
-  <BodyPartGroupDef>
-    <defName>LowerLeftDroidHand</defName>
-    <label>lower left droid fist</label>
-    <labelShort>fist</labelShort>
-    <listOrder>79</listOrder>
-  </BodyPartGroupDef>
-  
-  <BodyPartGroupDef>
-    <defName>LowerRightDroidHand</defName>
-    <label>lower right droid fist</label>
-    <labelShort>fist</labelShort>
-    <listOrder>78</listOrder>
-  </BodyPartGroupDef>
-
 
 
   <BodyPartDef>
     <defName>Chasis</defName>
     <label>chasis</label>
-    <hitPoints>50</hitPoints>
+    <hitPoints>40</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -48,7 +26,7 @@
   <BodyPartDef>
     <defName>Frame</defName>
     <label>frame</label>
-    <hitPoints>100</hitPoints>
+    <hitPoints>32</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -57,8 +35,8 @@
 
   <BodyPartDef>
     <defName>DroidNeck</defName>
-    <label>neck</label>
-    <hitPoints>45</hitPoints>
+    <label>neck bearing</label>
+    <hitPoints>14</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -71,9 +49,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidLeftSightSensor</defName>
-    <label>left sight sensor</label>
-    <hitPoints>15</hitPoints>
+    <defName>DroidSightSensor</defName>
+    <label>sight sensor</label>
+    <hitPoints>7</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -84,35 +62,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidRightSightSensor</defName>
-    <label>right sight sensor</label>
-    <hitPoints>15</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <socketed>true</socketed>
-    <tags>
-      <li>SightSource</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>DroidLeftHearingSensor</defName>
-    <label>left audio sensor</label>
-    <hitPoints>10</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>HearingSource</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>DroidRightHearingSensor</defName>
-    <label>right audio sensor</label>
-    <hitPoints>10</hitPoints>
+    <defName>DroidHearingSensor</defName>
+    <label>audio sensor</label>
+    <hitPoints>5</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -125,209 +77,71 @@
   <BodyPartDef>
     <defName>DroidSmellSensor</defName>
     <label>scent detector</label>
+    <hitPoints>5</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroidShoulder</defName>
+    <label>shoulder bar</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroidArm</defName>
+    <label>articulating rod</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroidHand</defName>
+    <label>droid hand</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DroidFinger</defName>
+    <label>droid finger</label>
     <hitPoints>10</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LeftDroidShoulder</defName>
-    <label>upper left shoulder</label>
-    <hitPoints>80</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <frostbiteVulnerability>0.01</frostbiteVulnerability>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
     <solid>true</solid>
     <tags>
-      <li>ManipulationLimbSegment</li>
+      <li>ManipulationLimbDigit</li>
     </tags>
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>LeftDroidArm</defName>
-    <label>upper left arm</label>
-    <hitPoints>60</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbCore</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LeftDroidHand</defName>
-    <label>upper left grabber</label>
+    <defName>DroidLeg</defName>
+    <label>tread casing</label>
     <hitPoints>30</hitPoints>
-    <frostbiteVulnerability>0</frostbiteVulnerability>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <tags>
-      <li>ManipulationLimbSegment</li>
-    </tags>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LeftHandDroidPinky</defName>
-    <label>upper left pinky</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.01</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LeftHandDroidMiddleFinger</defName>
-    <label>upper left middle finger</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.01</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LeftHandDroidIndexFinger</defName>
-    <label>upper left index finger</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.01</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LeftHandDroidThumb</defName>
-    <label>upper left thumb</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.01</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>RightDroidShoulder</defName>
-    <label>upper right shoulder</label>
-    <hitPoints>80</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbSegment</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>RightDroidArm</defName>
-    <label>upper lower right arm</label>
-    <hitPoints>60</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbCore</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>RightDroidHand</defName>
-    <label>upper right grabber</label>
-    <hitPoints>30</hitPoints>
-    <frostbiteVulnerability>0</frostbiteVulnerability>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <tags>
-      <li>ManipulationLimbSegment</li>
-    </tags>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>RightHandDroidPinky</defName>
-    <label>upper right pinky</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.01</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>RightHandDroidMiddleFinger</defName>
-    <label>upper right middle finger</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.01</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>RightHandDroidIndexFinger</defName>
-    <label>upper right index finger</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.01</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>RightHandDroidThumb</defName>
-    <label>upper right thumb</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.01</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LeftDroidLeg</defName>
-    <label>left leg</label>
-    <hitPoints>80</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -338,35 +152,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>LeftDroidFoot</defName>
-    <label>left tread wheel</label>
-    <hitPoints>40</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>MovingLimbSegment</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>RightDroidLeg</defName>
-    <label>right leg</label>
-    <hitPoints>80</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>MovingLimbCore</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>RightDroidFoot</defName>
-    <label>right tread wheel</label>
-    <hitPoints>40</hitPoints>
+    <defName>DroidFoot</defName>
+    <label>tread wheel</label>
+    <hitPoints>26</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -378,212 +166,14 @@
 
   <BodyPartDef>
     <defName>DroidBrain</defName>
-    <label>droid brain</label>
-    <hitPoints>30</hitPoints>
+    <label>computing matrix</label>
+    <hitPoints>15</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
     <solid>true</solid>
     <tags>
       <li>ConsciousnessSource</li>
-    </tags>
-  </BodyPartDef>
-
-
-
-
-
-
-  <!-- Wardroid secondary set of arms -->
-  <BodyPartDef>
-    <defName>LowerLeftDroidShoulder</defName>
-    <label>lower left shoulder</label>
-    <hitPoints>80</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbSegment</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LowerLeftDroidArm</defName>
-    <label>lower left arm</label>
-    <hitPoints>60</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbCore</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LowerLeftDroidHand</defName>
-    <label>lower left grabber</label>
-    <hitPoints>30</hitPoints>
-    <frostbiteVulnerability>0</frostbiteVulnerability>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <tags>
-      <li>ManipulationLimbSegment</li>
-    </tags>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LowerLeftHandDroidPinky</defName>
-    <label>lower left pinky</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.01</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LowerLeftHandDroidMiddleFinger</defName>
-    <label>lower left middle finger</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.01</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LowerLeftHandDroidIndexFinger</defName>
-    <label>lower left index finger</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.01</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LowerLeftHandDroidThumb</defName>
-    <label>lower left thumb</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.01</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LowerRightDroidShoulder</defName>
-    <label>lower right shoulder</label>
-    <hitPoints>80</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbSegment</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LowerRightDroidArm</defName>
-    <label>lower right arm</label>
-    <hitPoints>60</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbCore</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LowerRightDroidHand</defName>
-    <label>lower right grabber</label>
-    <hitPoints>30</hitPoints>
-    <frostbiteVulnerability>0</frostbiteVulnerability>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <tags>
-      <li>ManipulationLimbSegment</li>
-    </tags>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LowerRightHandDroidPinky</defName>
-    <label>lower right pinky</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.01</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LowerRightHandDroidMiddleFinger</defName>
-    <label>lower right middle finger</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.01</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LowerRightHandDroidIndexFinger</defName>
-    <label>lower right index finger</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.01</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>LowerRightHandDroidThumb</defName>
-    <label>lower right thumb</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.01</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
     </tags>
   </BodyPartDef>
 

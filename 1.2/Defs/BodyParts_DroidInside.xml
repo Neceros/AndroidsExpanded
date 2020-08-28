@@ -5,7 +5,7 @@
   <BodyPartDef>
     <defName>DroidHeart</defName>
     <label>coolant pump</label>
-    <hitPoints>30</hitPoints>
+    <hitPoints>12</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>2</bleedRate>
@@ -16,22 +16,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidLeftLung</defName>
-    <label>left induction fan</label>
-    <hitPoints>20</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <bleedRate>1</bleedRate>
-    <tags>
-      <li>BreathingSource</li>
-    </tags>
-    <canSuggestAmputation>false</canSuggestAmputation>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>DroidRightLung</defName>
-    <label>right induction fan</label>
-    <hitPoints>20</hitPoints>
+    <defName>DroidLung</defName>
+    <label>induction fan</label>
+    <hitPoints>12</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>1</bleedRate>	
@@ -42,19 +29,9 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DroidLeftKidney</defName>
-    <label>left coolant scrubber</label>
-    <hitPoints>20</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <bleedRate>2</bleedRate>
-    <canSuggestAmputation>false</canSuggestAmputation>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>DroidRightKidney</defName>
-    <label>right coolant scrubber</label>
-    <hitPoints>20</hitPoints>
+    <defName>DroidKidney</defName>
+    <label>coolant scrubber</label>
+    <hitPoints>6</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>2</bleedRate>
@@ -67,7 +44,7 @@
   <BodyPartDef>
     <defName>DroidLiver</defName>
     <label>system stabilizer</label>
-    <hitPoints>20</hitPoints>
+    <hitPoints>10</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>1</bleedRate>
@@ -77,7 +54,7 @@
   <BodyPartDef>
     <defName>DroidStomach</defName>
     <label>energy distributor</label>
-    <hitPoints>25</hitPoints>
+    <hitPoints>15</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>1</bleedRate>

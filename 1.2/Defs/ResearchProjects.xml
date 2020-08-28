@@ -14,9 +14,6 @@
       <li>Batteries</li>
     </prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <requiredResearchFacilities>
-      <li>MultiAnalyzer</li>
-    </requiredResearchFacilities>
     <researchViewX>1.00</researchViewX>
     <researchViewY>3.50</researchViewY>
   </ResearchProjectDef> 
