@@ -22,7 +22,7 @@
         </li>
         <li>
           <def>WarDroidHeart</def>
-          <coverage>0.015</coverage>
+          <coverage>0.01</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -30,7 +30,7 @@
         </li>
         <li>
           <def>WarDroidLung</def>
-          <coverage>0.02</coverage>
+          <coverage>0.01</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -38,7 +38,7 @@
         </li>
         <li>
           <def>WarDroidLung</def>
-          <coverage>0.02</coverage>
+          <coverage>0.01</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -62,7 +62,7 @@
         </li>
         <li>
           <def>WarDroidLiver</def>
-          <coverage>0.023</coverage>
+          <coverage>0.01</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -70,7 +70,7 @@
         </li>
         <li>
           <def>WarDroidNeck</def>
-          <coverage>0</coverage>
+          <coverage>0.03</coverage>
           <height>Top</height>
           <parts>
             <li>
@@ -150,7 +150,7 @@
         </li>
         <li>
           <def>WarDroidShoulder</def>
-          <coverage>0.15</coverage>
+          <coverage>0.10</coverage>
           <groups>
             <li>Shoulders</li>
           </groups>
@@ -219,7 +219,7 @@
         </li>
         <li>
           <def>WarDroidShoulder</def>
-          <coverage>0.15</coverage>
+          <coverage>0.10</coverage>
           <groups>
             <li>Shoulders</li>
           </groups>
@@ -288,7 +288,7 @@
         </li>
         <li>
           <def>WarDroidShoulder</def>
-          <coverage>0.15</coverage>
+          <coverage>0.10</coverage>
           <groups>
             <li>Shoulders</li>
           </groups>
@@ -356,7 +356,7 @@
         </li>
         <li>
           <def>WarDroidShoulder</def>
-          <coverage>0.15</coverage>
+          <coverage>0.10</coverage>
           <groups>
             <li>Shoulders</li>
           </groups>
@@ -432,7 +432,7 @@
         </li>
         <li>
           <def>WarDroidLeg</def>
-          <coverage>0.15</coverage>
+          <coverage>0.10</coverage>
           <height>Bottom</height>
           <groups>
             <li>Legs</li>
@@ -449,7 +449,7 @@
         </li>
         <li>
           <def>WarDroidLeg</def>
-          <coverage>0.15</coverage>
+          <coverage>0.10</coverage>
           <height>Bottom</height>
           <groups>
             <li>Legs</li>

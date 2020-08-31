@@ -19,7 +19,6 @@
 		</apparelMoney>
 		<weaponTags>
 			<li>Gun</li>
-			<li>NonNeolithicOnlyMelee</li>
 		</weaponTags>
 		<weaponMoney>
 			<min>0</min>
@@ -30,7 +29,7 @@
 
 	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>ChjSpacerBattleDroidColonist</defName>
-		<label>advanced battle droid</label>
+		<label>wardroid colonist</label>
 		<race>ChjSpacerBattleDroid</race>
 		<defaultFactionType>ChjPlayerAndroidColony</defaultFactionType>
 		<backstoryCategories>
@@ -46,13 +45,29 @@
 		</apparelMoney>
 		<weaponTags>
 			<li>Gun</li>
-			<li>NonNeolithicOnlyMelee</li>
 		</weaponTags>
 		<weaponMoney>
-			<min>0</min>
-			<max>0</max>
+			<min>330</min>
+			<max>2200</max>
 		</weaponMoney>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsMoney>2000~3000</techHediffsMoney>
+    <techHediffsTags>
+      <li>AdvancedWeapon</li>
+    </techHediffsTags>
+    <techHediffsChance>0.25</techHediffsChance>
+    <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>0</combatEnhancingDrugsCount>
+    <biocodeWeaponChance>0.17</biocodeWeaponChance>
+    <inventoryOptions>
+      <skipChance>0.50</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>ChjDroidRepairKit</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="BasePlayerPawnKind">
@@ -73,8 +88,16 @@
 
 	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>NMedicDroneColonist</defName>
-		<label>medicine drone</label>
+		<label>medic drone</label>
 		<race>NMedicDrone</race>
+		<defaultFactionType>ChjPlayerAndroidColony</defaultFactionType>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>NSavvyDroneColonist</defName>
+		<label>savvy drone</label>
+		<race>NSavvyDrone</race>
 		<defaultFactionType>ChjPlayerAndroidColony</defaultFactionType>
 		<chemicalAddictionChance>0.00</chemicalAddictionChance>
 	</PawnKindDef>

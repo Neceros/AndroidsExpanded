@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HugsLib.UpdateFeatureDef Abstract="true" Name="UpdateFeatureBase">
+    <modNameReadable>Androids Expanded</modNameReadable>
+    <modIdentifier>neceros.androidsexpanded</modIdentifier>
+    <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2179977828</linkUrl>
+  </HugsLib.UpdateFeatureDef>
+  
+  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+    <defName>AE_1</defName>
+    <assemblyVersion>1.2.9</assemblyVersion>
+    <content>&lt;b&gt;CHANGES&lt;/b&gt;|All droids have had their health adjusted.|All droids have had their body part hitpoints reduced for balance reasons. Battledroids were far too powerful before due to the previous increases, and this is to keep it inline with the vision.|Wardroid speed has been increased||Please be sure to watch your droids during combat and don't underestimate your opponents until you get a feel for the new droid power.</content>
+  </HugsLib.UpdateFeatureDef>
+
+</Defs>

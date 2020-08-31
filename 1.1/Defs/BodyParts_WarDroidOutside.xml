@@ -12,7 +12,7 @@
   <BodyPartDef>
     <defName>WarChasis</defName>
     <label>chasis</label>
-    <hitPoints>65</hitPoints>
+    <hitPoints>50</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -25,7 +25,7 @@
   <BodyPartDef>
     <defName>WarFrame</defName>
     <label>frame</label>
-    <hitPoints>60</hitPoints>
+    <hitPoints>45</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -35,7 +35,7 @@
   <BodyPartDef>
     <defName>WarDroidNeck</defName>
     <label>armored conduit</label>
-    <hitPoints>45</hitPoints>
+    <hitPoints>25</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -50,7 +50,7 @@
   <BodyPartDef>
     <defName>WarDroidSensor</defName>
     <label>atomic sensor</label>
-    <hitPoints>20</hitPoints>
+    <hitPoints>12</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -64,7 +64,7 @@
   <BodyPartDef>
     <defName>WarDroidShoulder</defName>
     <label>heavy shoulder mount</label>
-    <hitPoints>80</hitPoints>
+    <hitPoints>35</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -77,7 +77,7 @@
   <BodyPartDef>
     <defName>WarDroidArm</defName>
     <label>heavy articulating rod</label>
-    <hitPoints>60</hitPoints>
+    <hitPoints>20</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -90,7 +90,7 @@
   <BodyPartDef>
     <defName>WarDroidHand</defName>
     <label>heavy grabber</label>
-    <hitPoints>30</hitPoints>
+    <hitPoints>12</hitPoints>
     <frostbiteVulnerability>0</frostbiteVulnerability>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
@@ -104,7 +104,7 @@
   <BodyPartDef>
     <defName>WarDroidFinger</defName>
     <label>heavy finger</label>
-    <hitPoints>7</hitPoints>
+    <hitPoints>12</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <frostbiteVulnerability>0.01</frostbiteVulnerability>
     <skinCovered>false</skinCovered>
@@ -118,7 +118,7 @@
   <BodyPartDef>
     <defName>WarDroidLeg</defName>
     <label>armored tread casing</label>
-    <hitPoints>80</hitPoints>
+    <hitPoints>40</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>
@@ -131,7 +131,7 @@
   <BodyPartDef>
     <defName>WarDroidFoot</defName>
     <label>armored tread</label>
-    <hitPoints>40</hitPoints>
+    <hitPoints>34</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <bleedRate>0</bleedRate>

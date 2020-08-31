@@ -1,0 +1,202 @@
+public static Pawn MakeDroidTemplate(PawnKindDef pawnKindDef, Faction faction, int tile, List<SkillRequirement> skills = null, int defaultSkillLevel = 6)
+{
+    Log.Message("MakeDroidTemplate: Generating new Droid.");
+    Map map = null;
+    if(tile > -1)
+    {
+        map = Current.Game?.FindMap(tile);
+    }
+
+    //Log.Message("Map: " + map);
+
+    //Manually craft a Droid Pawn.
+
+    Log.Message($"MakeDroidTemplate: Vanilla: Generates new pawn: {pawnKindDef.defName}");
+    Pawn pawnBeingCrafted = (Pawn)ThingMaker.MakeThing(pawnKindDef.race);
+    if (pawnBeingCrafted == null)
+        return null;
+
+    //Kind, Faction and initial Components.
+    Log.Message("MakeDroidTemplate: Tries setting faction for droid.");
+    pawnBeingCrafted.kindDef = pawnKindDef;
+    if(faction != null)
+    {
+        pawnBeingCrafted.SetFactionDirect(faction);
+    }
+    PawnComponentsUtility.CreateInitialComponents(pawnBeingCrafted);
+
+    //Gender
+    Log.Message("MakeDroidTemplate: Set defaults for droid.");
+    pawnBeingCrafted.gender = Gender.Male;
+
+    //Set Needs at initial levels.
+    pawnBeingCrafted.needs.SetInitialLevels();
+
+    //Set age
+    pawnBeingCrafted.ageTracker.AgeBiologicalTicks = 0;
+    pawnBeingCrafted.ageTracker.AgeChronologicalTicks = 0;
+
+    //Set Story
+    Log.Message("MakeDroidTemplate: Set default backstories for droid.");
+    if (pawnBeingCrafted.RaceProps.Humanlike)
+    {
+        DroidSpawnProperties spawnProperties = pawnKindDef.race.GetModExtension<DroidSpawnProperties>();
+
+        Log.Message("MakeDroidTemplate: Set gender and hostility response mode.");
+        if (spawnProperties != null)
+        {
+            pawnBeingCrafted.gender = spawnProperties.gender;
+            pawnBeingCrafted.playerSettings.hostilityResponse = spawnProperties.hostileResponse;
+        }
+
+        Log.Message("MakeDroidTemplate: Set droid appearance.");
+        //Appearance
+        pawnBeingCrafted.story.melanin = 1f;
+        pawnBeingCrafted.story.crownType = CrownType.Average;
+
+        Log.Message("MakeDroidTemplate: Set droid hair (if any).");
+        if (spawnProperties != null && spawnProperties.generateHair)
+        {
+            IEnumerable<HairDef> source = from hair in DefDatabase<HairDef>.AllDefs
+                                            where hair.hairTags.SharesElementWith(spawnProperties.hairTags)
+                                            select hair;
+            HairDef resultHair = source.RandomElementByWeightWithFallback((hair) => HairChoiceLikelihoodFor(hair, pawnBeingCrafted), DefDatabase<HairDef>.GetNamed("Shaved"));
+
+            pawnBeingCrafted.story.hairDef = resultHair;
+
+            if(pawnBeingCrafted.def is ThingDef_AlienRace alienRaceDef)
+            {
+                pawnBeingCrafted.story.hairColor = alienRaceDef.alienRace?.generalSettings?.alienPartGenerator?.colorChannels.FirstOrDefault(channel => channel.name == "hair").first?.NewRandomizedColor() ?? new UnityEngine.Color(1f, 1f, 1f, 1f);
+            }
+        }
+        else
+        {
+            pawnBeingCrafted.story.hairColor = new UnityEngine.Color(1f, 1f, 1f, 1f);
+            pawnBeingCrafted.story.hairDef = DefDatabase<HairDef>.GetNamed("Shaved");
+        }
+
+        Log.Message("MakeDroidTemplate: Set droid body type.");
+        if (spawnProperties != null && spawnProperties.bodyType != null)
+        {
+            pawnBeingCrafted.story.bodyType = spawnProperties.bodyType;
+        }
+        else
+        {
+            pawnBeingCrafted.story.bodyType = BodyTypeDefOf.Thin;
+        }
+
+        PortraitsCache.SetDirty(pawnBeingCrafted);
+
+        //Backstory
+        Log.Message("MakeDroidTemplate: Finalising droid backstories.");
+        Backstory backstory = null;
+        if (spawnProperties != null && spawnProperties.backstory != null)
+        {
+            BackstoryDatabase.TryGetWithIdentifier(spawnProperties.backstory.defName, out backstory);
+        }
+        else
+        {
+            BackstoryDatabase.TryGetWithIdentifier("ChJAndroid_Droid", out backstory);
+        }
+                
+        pawnBeingCrafted.story.childhood = backstory;
+
+        //Skills
+        Log.Message("MakeDroidTemplate: Set droid skills.");
+        if (skills == null || skills.Count <= 0)
+        {
+            if(spawnProperties != null)
+            {
+                //Set all skills to default first.
+                foreach(SkillDef skillDef in DefDatabase<SkillDef>.AllDefsListForReading)
+                {
+                    SkillRecord skill = pawnBeingCrafted.skills.GetSkill(skillDef);
+                    skill.Level = spawnProperties.defaultSkillLevel;
+                }
+
+                //Set skills and passions.
+                foreach (DroidSkill droidSkill in spawnProperties.skills)
+                {
+                    SkillRecord skill = pawnBeingCrafted.skills.GetSkill(droidSkill.def);
+                    if(skill != null)
+                    {
+                        skill.Level = droidSkill.level;
+                        skill.passion = droidSkill.passion;
+                    }
+                }
+            }
+            else
+            {
+                List<SkillDef> allDefsListForReading = DefDatabase<SkillDef>.AllDefsListForReading;
+                for (int i = 0; i < allDefsListForReading.Count; i++)
+                {
+                    SkillDef skillDef = allDefsListForReading[i];
+                    SkillRecord skill = pawnBeingCrafted.skills.GetSkill(skillDef);
+
+                    if (skillDef == SkillDefOf.Shooting || skillDef == SkillDefOf.Melee || skillDef == SkillDefOf.Mining || skillDef == SkillDefOf.Plants)
+                        skill.Level = 8;
+                    else
+                        if (skillDef == SkillDefOf.Medicine || skillDef == SkillDefOf.Crafting || skillDef == SkillDefOf.Cooking)
+                        skill.Level = 4;
+                    else
+                        skill.Level = 6;
+                    skill.passion = Passion.None;
+                }
+            }
+        }
+        else
+        {
+            List<SkillDef> allDefsListForReading = DefDatabase<SkillDef>.AllDefsListForReading;
+            for (int i = 0; i < allDefsListForReading.Count; i++)
+            {
+                SkillDef skillDef = allDefsListForReading[i];
+                SkillRecord skill = pawnBeingCrafted.skills.GetSkill(skillDef);
+
+                SkillRequirement skillRequirement = skills.First(sr => sr.skill == skillDef);
+                if (skillRequirement != null)
+                {
+                    skill.Level = skillRequirement.minLevel;
+                }
+                else
+                {
+                    skill.Level = defaultSkillLevel;
+                }
+                        
+                skill.passion = Passion.None;
+            }
+        }
+    }
+
+    //Work settings
+    Log.Message("MakeDroidTemplate: Set droid work settings.");
+    if (pawnBeingCrafted.workSettings != null)
+    {
+        pawnBeingCrafted.workSettings.EnableAndInitialize();
+    }
+
+    //Name
+    Log.Message("MakeDroidTemplate: Set droid name.");
+    if (map != null && faction.IsPlayer)
+    {
+        var names = from pawn in map.mapPawns.FreeColonists
+                    select pawn.Name;
+
+        if (names != null)
+        {
+            int droidNameCount = names.Count(name => name.ToStringShort.ToLower().StartsWith(pawnKindDef.race.label.ToLower()));
+            string finalShortName = pawnKindDef.race.LabelCap + " " + droidNameCount;
+            pawnBeingCrafted.Name = MakeDroidName(finalShortName);
+        }
+        else
+        {
+            pawnBeingCrafted.Name = MakeDroidName(null);
+        }
+    }
+    else
+    {
+        pawnBeingCrafted.Name = MakeDroidName(null);
+    }
+
+    Log.Message("MakeDroidTemplate: Returning finished droid.");
+    return pawnBeingCrafted;
+}

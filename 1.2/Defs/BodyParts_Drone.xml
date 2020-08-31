@@ -112,62 +112,6 @@
     <bleedRate>0</bleedRate>
     <solid>true</solid>
   </BodyPartDef>
-<!--
-  <BodyPartDef>
-    <defName>DronePinky</defName>
-    <label>pinky</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.001</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>DroneMiddleFinger</defName>
-    <label>middle finger</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.001</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>DroneIndexFinger</defName>
-    <label>index finger</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.001</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>DroneThumb</defName>
-    <label>thumb</label>
-    <hitPoints>7</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <frostbiteVulnerability>0.001</frostbiteVulnerability>
-    <skinCovered>false</skinCovered>
-    <bleedRate>0</bleedRate>
-    <solid>true</solid>
-    <tags>
-      <li>ManipulationLimbDigit</li>
-    </tags>
-  </BodyPartDef> -->
 
   <BodyPartDef>
     <defName>LeftDroneLeg</defName>

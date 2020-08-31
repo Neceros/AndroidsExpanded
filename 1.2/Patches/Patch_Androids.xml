@@ -22,6 +22,8 @@
     </value>
   </Operation>
 
+  <!--  -->
+
   <Operation Class="PatchOperationReplace">
     <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjDroid"]/race/body</xpath>
     <value>
@@ -35,6 +37,8 @@
       <body>BattleDroidBody</body>
     </value>
   </Operation>
+
+  <!--  -->
 
   <Operation Class="PatchOperationReplace">
     <xpath>/Defs/ThingDef[defName="ChJAndroidPrinter"]/graphicData/drawSize</xpath>
@@ -63,6 +67,8 @@
       <altitudeLayer>BuildingOnTop</altitudeLayer>
     </value>
   </Operation>
+
+  <!--  -->
 
   <Operation Class="PatchOperationReplace">
     <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjDroid"]/alienRace/generalSettings/alienPartGenerator/alienbodytypes</xpath>
@@ -94,6 +100,8 @@
     </value>
   </Operation>
 
+  <!--  -->
+
   <!-- only matters for Royalty -->
   <Operation Class="PatchOperationReplace">
     <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjBattleDroid"]/alienRace/raceRestriction/whiteApparelList</xpath>
@@ -112,6 +120,8 @@
     </value>
   </Operation>
 
+  <!--  -->
+
   <Operation Class="PatchOperationReplace">
     <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjDroid"]/tools/li[label/text()="left fist" or label/text()="right fist"]/linkedBodyPartsGroup</xpath>
     <value>
@@ -123,6 +133,156 @@
     <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjBattleDroid"]/tools/li[label/text()="left bladed fist" or label/text()="right bladed fist"]/linkedBodyPartsGroup</xpath>
     <value>
       <linkedBodyPartsGroup>BattleDroidHand</linkedBodyPartsGroup>
+    </value>
+  </Operation>
+
+  <!-- Rebel rifle -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ChjAndroidGun_RebelRifle"]/statBases</xpath>
+    <value>
+      <statBases>
+        <WorkToMake>50000</WorkToMake>
+        <MarketValue>1200</MarketValue>
+        <Mass>4.6</Mass>
+        <AccuracyTouch>0.35</AccuracyTouch>
+        <AccuracyShort>0.65</AccuracyShort>
+        <AccuracyMedium>0.92</AccuracyMedium>
+        <AccuracyLong>0.62</AccuracyLong>
+        <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+      </statBases>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ChjAndroidGun_RebelRifle"]</xpath>
+    <value>
+      <weaponTags>
+        <li>SpacerGun</li>
+        <li>SimpleGun</li>
+      </weaponTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ChjAndroidBullet_RebelRifle"]/projectile</xpath>
+    <value>
+      <armorPenetrationBase>0.50</armorPenetrationBase>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ChjAndroidGun_RebelRifle"]/verbs/li/warmupTime</xpath>
+    <value>
+      <warmupTime>0.85</warmupTime>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ChjAndroidGun_RebelRifle"]/verbs/li</xpath>
+    <value>
+      <burstShotCount>3</burstShotCount>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ChjAndroidGun_RebelRifle"]</xpath>
+    <value>
+      <thingSetMakerTags>
+        <li>RewardStandardLowFreq</li>
+        <li>RewardStandardQualitySuper</li>
+      </thingSetMakerTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ChjAndroidBullet_RebelRifle"]/projectile</xpath>
+    <value>
+      <stoppingPower>1</stoppingPower>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ChjAndroidGun_RebelRifle"]/costList</xpath>
+    <value>
+      <costList>
+        <Steel>120</Steel>
+        <Plasteel>25</Plasteel>
+        <ComponentIndustrial>7</ComponentIndustrial>
+      </costList>
+    </value>
+  </Operation>
+
+  <!-- Rebel pistol -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ChjAndroidGun_Rebelpistol"]/statBases</xpath>
+    <value>
+      <statBases>
+        <WorkToMake>15000</WorkToMake>
+        <MarketValue>900</MarketValue>
+        <Mass>1.2</Mass>
+        <AccuracyTouch>0.84</AccuracyTouch>
+        <AccuracyShort>0.92</AccuracyShort>
+        <AccuracyMedium>0.25</AccuracyMedium>
+        <AccuracyLong>0.03</AccuracyLong>
+      </statBases>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ChjAndroidGun_Rebelpistol"]/weaponTags</xpath>
+    <value>
+      <li>SpacerGun</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ChjAndroidBullet_Rebelpistol"]/projectile</xpath>
+    <value>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ChjAndroidGun_Rebelpistol"]/verbs/li/warmupTime</xpath>
+    <value>
+      <warmupTime>1</warmupTime>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ChjAndroidGun_Rebelpistol"]</xpath>
+    <value>
+      <thingSetMakerTags>
+        <li>RewardStandardLowFreq</li>
+        <li>RewardStandardQualitySuper</li>
+      </thingSetMakerTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ChjAndroidBullet_Rebelpistol"]/projectile</xpath>
+    <value>
+      <stoppingPower>0.85</stoppingPower>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ChjAndroidGun_Rebelpistol"]/costList</xpath>
+    <value>
+      <costList>
+        <Steel>65</Steel>
+        <Plasteel>15</Plasteel>
+        <ComponentIndustrial>2</ComponentIndustrial>
+      </costList>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ChjAndroidBullet_Rebelpistol"]/projectile/damageAmountBase</xpath>
+    <value>
+      <damageAmountBase>12</damageAmountBase>
     </value>
   </Operation>
 

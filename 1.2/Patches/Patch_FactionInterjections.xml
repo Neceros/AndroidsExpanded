@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[not(@ParentName="PirateBase")]/pawnGroupMakers/li[kindDef/text()="Combat"]/options</xpath>
+    <value>
+      <ChjSpacerBattleDroidColonist>5</ChjSpacerBattleDroidColonist>
+    </value>
+  </Operation>
+
+</Patch>

@@ -70,5 +70,18 @@
     <requiredResearch>Build_Drones</requiredResearch>
   </AndroidsExpanded.DroneCraftingDef>
 
+  <AndroidsExpanded.DroneCraftingDef>
+    <defName>NDrone_SavvyBot</defName>
+    <label>savvy drone</label>
+    <orderID>7</orderID>
+    <costList>
+      <Steel>300</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <timeCost>22000</timeCost>
+    <pawnKind>NSavvyDroneColonist</pawnKind>
+    <requiredResearch>Build_Drones</requiredResearch>
+  </AndroidsExpanded.DroneCraftingDef>
+
 
 </Defs>

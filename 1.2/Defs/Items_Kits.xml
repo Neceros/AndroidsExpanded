@@ -29,7 +29,7 @@
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useJob>UseItem</useJob>
-				<useLabel>Assemble Droid</useLabel>
+				<useLabel>Assemble advanced droid</useLabel>
 				<useDuration>600</useDuration>
 			</li>
 			<li Class="Androids.CompProperties_SpawnPawn">
@@ -70,7 +70,7 @@
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useJob>UseItem</useJob>
-				<useLabel>Assemble Battle droid</useLabel>
+				<useLabel>Assemble Wardroid</useLabel>
 				<useDuration>600</useDuration>
 			</li>
 			<li Class="Androids.CompProperties_SpawnPawn">
@@ -113,7 +113,7 @@
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useJob>UseItem</useJob>
-				<useLabel>Assemble Battle droid</useLabel>
+				<useLabel>Assemble engineer drone</useLabel>
 				<useDuration>600</useDuration>
 			</li>
 			<li Class="Androids.CompProperties_SpawnPawn">
@@ -154,7 +154,7 @@
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useJob>UseItem</useJob>
-				<useLabel>Assemble Battle droid</useLabel>
+				<useLabel>Assemble chef drone</useLabel>
 				<useDuration>600</useDuration>
 			</li>
 			<li Class="Androids.CompProperties_SpawnPawn">
@@ -195,12 +195,53 @@
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useJob>UseItem</useJob>
-				<useLabel>Assemble Battle droid</useLabel>
+				<useLabel>Assemble medic drone</useLabel>
 				<useDuration>600</useDuration>
 			</li>
 			<li Class="Androids.CompProperties_SpawnPawn">
 				<compClass>Androids.CompUseEffect_SpawnDroid</compClass>
 				<pawnKind>NMedicDroneColonist</pawnKind>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>CompUseEffect_DestroySelf</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>NSavvyDroneKit</defName>
+		<label>savvy drone assembly kit</label>
+		<thingClass>ThingWithComps</thingClass>
+		<description>A kit containing a disassembled savvy drone with all the tools required to assemble it.</description>
+		<graphicData>
+			<texPath>Things/Item/BattleDroidAssemblyKit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<MaxHitPoints>70</MaxHitPoints>
+			<Mass>30.0</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<tradeability>All</tradeability>
+		<techLevel>Spacer</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Assemble Savvy drone</useLabel>
+				<useDuration>600</useDuration>
+			</li>
+			<li Class="Androids.CompProperties_SpawnPawn">
+				<compClass>Androids.CompUseEffect_SpawnDroid</compClass>
+				<pawnKind>NSavvyDroneColonist</pawnKind>
 			</li>
 			<li Class="CompProperties_UseEffect">
 				<compClass>CompUseEffect_DestroySelf</compClass>
